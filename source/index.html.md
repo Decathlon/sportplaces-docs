@@ -5,13 +5,16 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - shell
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+  - <a href='https://decathlon.ca'>Created by Decathlon Canada</a>
+  - <a href='https://github.com/lord/slate'>Documentation powered by Slate</a>
 
 includes:
   - authorization
-  - places
+  - api/places
+  - api/sports
+  - api/activities
   - errors
+
 
 search: true
 ---
