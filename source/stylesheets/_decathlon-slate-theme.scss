@@ -1,0 +1,60 @@
+////////////////////////////////////////////////////////////////////////////////
+// DECATHLON SLATE THEME
+//
+// Built to offered a seamless visual experience between all of our internal & external APIs
+// Source : https://bitbucket.org/freethedevelopersteam/decathlon-slate-theme
+// 
+////////////////////////////////////////////////////////////////////////////////
+
+.toc-wrapper {
+  &:before {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: -20px;
+    transform: rotate(-10deg);
+    background: #2d2d2d;
+    width: 120%;
+    height: 128px;
+    z-index: -1;
+  }
+
+  .logo {
+    width: 200px !important;
+  }
+
+  > .search {
+    margin-top: 55px;
+    input {
+      &::placeholder {  
+        color: white;  
+      }
+    }
+  }
+}
+
+
+// BACKGROUND COLORS
+////////////////////
+$nav-bg: #0082C3;
+$examples-bg: #2E3336;
+$code-bg: #2d2d2d;
+$code-annotation-bg: #191D1F;
+$nav-subitem-bg: #135b95;
+$nav-active-bg: #EC6607;
+$nav-active-parent-bg: #0c4875; // parent links of the current section
+$lang-select-border: #000;
+$lang-select-bg: #2d2d2d;
+$lang-select-active-bg: $examples-bg; // feel free to change this to blue or something
+$lang-select-pressed-bg: #111; // color of language tab bg when mouse is pressed
+$main-bg: #F3F7F9;
+$aside-notice-bg: #79b7de;
+$aside-warning-bg: #c97a7e;
+$aside-success-bg: #6ac174;
+$search-notice-bg: #c97a7e;
+
+
+// OTHER
+////////////////////
+$nav-footer-border-color: rgba(255, 255, 255, 0.6);
+$search-box-border-color: rgba(255, 255, 255, 0.5);
