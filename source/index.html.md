@@ -13,6 +13,7 @@ includes:
   - authentication
   - errors
   - api/places
+  - contributing
 
 search: true
 ---
