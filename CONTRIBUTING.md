@@ -12,7 +12,7 @@ Here are some ways *you* can contribute:
 
 ## Submitting a Pull Request
 1. Fork/Clone the Repository
-2. Create a <<topic>> branch
+2. Create a *[new-feature]* branch
 3. Implement your feature or bug fix.
 4. Add, commit, and push your changes.
 5. Submit a Pull Request through Gitlab's UI.
