@@ -13,6 +13,8 @@ includes:
   - authentication
   - errors
   - api/places
+  - api/activities
+  - api/tags
   - api/sports
   - api/sport_filters
   - api/sport_tags
