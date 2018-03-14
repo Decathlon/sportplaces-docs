@@ -6,7 +6,7 @@
 curl "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.582,45.511&radius=99&sports=175"
 ```
 
-> The above command returns JSON structured like this:
+> JSON response:
 
 ```json
 {
