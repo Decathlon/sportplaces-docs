@@ -20,13 +20,13 @@ activities to a place.
 
 ### HTTP Request
 
-`GET https://sportsplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters`
+`GET https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters`
 
 ## Allow a filter for a sport
 
 ```shell
 curl -X POST \
-  http://sportplaces-api.herokuapp.com/api/v1/sports/186/filters \
+  https://sportplaces-api.herokuapp.com/api/v1/sports/186/filters \
   -H 'apikey: XXXXXX' \
   -d '{"slug": "difficulty"}'
 ```
@@ -54,13 +54,13 @@ Adds a new filter to the allowed list for a specified sport. **MUST** be one of 
 
 ### HTTP Request
 
-`POST https://sportsplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters`
+`POST https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters`
 
 ## Remove a filter from a sport
 
 ```shell
 curl -X DELETE \
-  http://sportplaces-api.herokuapp.com/api/v1/sports/186/filters/difficulty \
+  https://sportplaces-api.herokuapp.com/api/v1/sports/186/filters/difficulty \
   -H 'apikey: XXXXXX' \
 ```
 
@@ -76,4 +76,4 @@ Removes a specific filter from the allowed list for a given sport.
 
 ### HTTP Request
 
-`DELETE https://sportsplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters/FILTER_SLUG`
+`DELETE https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters/FILTER_SLUG`

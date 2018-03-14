@@ -55,7 +55,7 @@ This endpoint retrieves all places meeting specific criteria
 
 ### HTTP Request
 
-`GET https://sportsplaces.herokuapp.com/api/v1/api/places`
+`GET https://sportplaces.herokuapp.com/api/v1/api/places`
 
 ### Query Parameters
 

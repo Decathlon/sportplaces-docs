@@ -18,13 +18,13 @@ Retrieves a list of tags that have been applied to a sporting activity at a plac
 
 ### HTTP Request
 
-`GET https://sportsplaces.herokuapp.com/api/v1/api/places/PLACE_UUID/tags`
+`GET https://sportplaces.herokuapp.com/api/v1/api/places/PLACE_UUID/tags`
 
 ## Add a tag to an activity
 
 ```shell
 curl -X POST \
-  http://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92ab-5ebd23f68d54/activities/160/tags \
+  https://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92ab-5ebd23f68d54/activities/160/tags \
   -H 'apikey: XXXXXX' \
   -d '{
 	  "slug": "lessons"
@@ -44,13 +44,13 @@ Adds a new tag to a sporting activity at a specified place. This tag **MUST** be
 
 ### HTTP Request
 
-`POST https://sportsplaces.herokuapp.com/api/v1/api/places/PLACE_UUID/tags`
+`POST https://sportplaces.herokuapp.com/api/v1/api/places/PLACE_UUID/tags`
 
 ## Remove a tag from an activity
 
 ```shell
 curl -X DELETE \
-  http://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92ab-5ebd23f68d54/activities/160/tags/lessons \
+  https://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92ab-5ebd23f68d54/activities/160/tags/lessons \
   -H 'apikey: XXXXXX'
 ```
 
