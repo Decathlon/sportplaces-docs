@@ -20,7 +20,7 @@ activities to a place.
 
 ### HTTP Request
 
-`GET https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters`
+`GET https://sportplaces-api.herokuapp.com/api/v1/api/sports/SPORT_ID/filters`
 
 ## Allow a filter for a sport
 
@@ -54,7 +54,7 @@ Adds a new filter to the allowed list for a specified sport. **MUST** be one of 
 
 ### HTTP Request
 
-`POST https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters`
+`POST https://sportplaces-api.herokuapp.com/api/v1/api/sports/SPORT_ID/filters`
 
 ## Remove a filter from a sport
 
@@ -76,4 +76,4 @@ Removes a specific filter from the allowed list for a given sport.
 
 ### HTTP Request
 
-`DELETE https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/filters/FILTER_SLUG`
+`DELETE https://sportplaces-api.herokuapp.com/api/v1/api/sports/SPORT_ID/filters/FILTER_SLUG`

@@ -18,7 +18,7 @@ Retrieves a list of tags that have been applied to a sporting activity at a plac
 
 ### HTTP Request
 
-`GET https://sportplaces.herokuapp.com/api/v1/api/places/PLACE_UUID/tags`
+`GET https://sportplaces-api.herokuapp.com/api/v1/api/places/PLACE_UUID/tags`
 
 ## Add a tag to an activity
 
@@ -44,7 +44,7 @@ Adds a new tag to a sporting activity at a specified place. This tag **MUST** be
 
 ### HTTP Request
 
-`POST https://sportplaces.herokuapp.com/api/v1/api/places/PLACE_UUID/tags`
+`POST https://sportplaces-api.herokuapp.com/api/v1/api/places/PLACE_UUID/tags`
 
 ## Remove a tag from an activity
 

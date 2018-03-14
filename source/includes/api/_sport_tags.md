@@ -22,7 +22,7 @@ activities to a place.
 
 ### HTTP Request
 
-`GET https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/tags`
+`GET https://sportplaces-api.herokuapp.com/api/v1/api/sports/SPORT_ID/tags`
 
 ## Allow a tag for a sport
 
@@ -56,7 +56,7 @@ Adds a new tag to the allowed list for a specified sport. **MUST** be one of the
 
 ### HTTP Request
 
-`POST https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/tags`
+`POST https://sportplaces-api.herokuapp.com/api/v1/api/sports/SPORT_ID/tags`
 
 ## Remove a tag from a sport
 
@@ -78,4 +78,4 @@ Removes a specific tag from the allowed list for a given sport.
 
 ### HTTP Request
 
-`DELETE https://sportplaces.herokuapp.com/api/v1/api/sports/SPORT_ID/tags/TAG_SLUG`
+`DELETE https://sportplaces-api.herokuapp.com/api/v1/api/sports/SPORT_ID/tags/TAG_SLUG`

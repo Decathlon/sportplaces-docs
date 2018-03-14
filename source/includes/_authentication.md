@@ -1,7 +1,7 @@
 # Authentication
 
 ```shell
-curl "https://sportplaces.herokuapp.com/api/v1/places"
+curl "https://sportplaces-api.herokuapp.com/api/v1/places"
   -H "apikey: XXXXXX"
 ```
 
