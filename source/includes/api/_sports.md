@@ -35,7 +35,7 @@ string format.
 
 ### HTTP Request
 
-`GET https://sportplaces-api.herokuapp.com/api/v1/api/sports`
+`GET https://sportplaces-api.herokuapp.com/api/v1/sports`
 
 ## Show details for one sport
 
@@ -65,4 +65,4 @@ Retrieves details for one specific sport. Included are the English name, and the
 
 ### HTTP Request
 
-`GET https://sportplaces-api.herokuapp.com/api/v1/api/sports/SPORT_ID`
+`GET https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID`
