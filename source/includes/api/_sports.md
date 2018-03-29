@@ -10,7 +10,8 @@ curl "https://sportplaces-api.herokuapp.com/api/v1/sports"
 
 ```json
 {
-    "186": {
+    {
+        "id": 186,
         "name": "Diving",
         "tags": [
             "free",
@@ -47,6 +48,7 @@ curl "https://sportplaces-api.herokuapp.com/api/v1/sports/186"
 
 ```json
 {
+    "id": 186,
     "name": "Diving",
     "tags": [
         "free",

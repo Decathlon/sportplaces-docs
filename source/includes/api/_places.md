@@ -31,13 +31,14 @@ curl "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.582,45.511&
                     "province": "Québec",
                     "country": "CA"
                 },
-                "activities": {
-                    "175": {
-                        "tags": [],
-                        "difficulty": 2,
-                        "distance": 10
-                    }
-                }
+                "activities": [
+                  {
+                    "sport_id": 160,
+                    "tags": [],
+                    "difficulty": 2,
+                    "distance": 10
+                  }
+                ]
             },
             "geometry": {
                 "type": "Point",

@@ -9,8 +9,9 @@ curl "https://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92a
 > JSON response:
 
 ```json
-{
-    "160": {
+[
+    {
+        "sport_id": 160,
         "tags": [],
         "difficulty": 2,
         "duration": 10,
@@ -18,12 +19,13 @@ curl "https://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92a
         "elevation_gain": 0,
         "cellphone_service": 1
     },
-    "175": {
+    {
+        "sport_id": 160,
         "tags": [],
         "difficulty": 2,
         "distance": 10
     }
-}
+]
 ```
 
 Retrieves a list of sporting activities at a place.
@@ -39,7 +41,8 @@ curl -X POST \
   https://sportplaces-api.herokuapp.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities \
   -H 'apikey: XXXXXX' \
   -d '{
-  "150": {
+  {
+    "sport_id": 150,
     "tags": ["free"],
     "cellphone_service": 1
   }
@@ -51,12 +54,9 @@ curl -X POST \
 ```json
 {
     ...
-    "150": {
-        "tags": [
-            "free"
-        ],
-        "cellphone_service": 1
-    },
+    "sport_id": 150,
+    "tags": ["free"],
+    "cellphone_service": 1
     ...
 }
 ```
