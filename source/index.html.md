@@ -6,7 +6,6 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 toc_footers:
   - <a href='https://decathlon.ca'>Created by Decathlon Canada</a>
-  - <a href='https://github.com/lord/slate'>Documentation powered by Slate</a>
 
 includes:
   - geojson
