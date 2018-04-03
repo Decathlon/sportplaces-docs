@@ -18,6 +18,7 @@ includes:
   - api/sport_filters
   - api/sport_tags
   - contributing
+  - roadmap
 
 search: true
 ---
