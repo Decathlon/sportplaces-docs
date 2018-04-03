@@ -78,23 +78,143 @@ Search query errors will be responded to with specific error information, and an
 
 Parameter | Example | Description
 --------- | ------- | -----------
-sw | `'-73.58,45.51'` | Bounding box corner (South West)
-ne | `'-73.08,45.91'` | Bounding box corner (North East)
-origin | `'-73.58,45.51'` | Central point from which to search for places
-radius | `10` | Number of kilometres around the origin to search
-user_origin | `'-73.08,45.91'` | The current location of the end-user making the request. Used to calculate proximity.
-sports | `'175,160'` | Filters results based on Decathlon Sport ID
-tags | `'free,equipment_rental'` | Restricts search results to only those matching all set tags
-surface | `clay,concrete` | Restricts search results to only those matching specified surface types
-min_difficulty | `0` | Integer [0, 1, 2] representing the minimum difficulty level
-max_difficulty | `2` | Integer [0, 1, 2] representing the maximum difficulty level
-min_duration | `60` | Minimum number of minutes for the sporting activities
-max_duration | `3660` | Maximum number of minutes allowed for the sporting activities
-min_distance | `10` | Minimum required distance in metres for the activities
-max_distance | `100` | Maximum allowed distance in metres for the activities
-min_elevation_gain | `50` | Minimum required vertical elevation change in metres for the activities
-max_elevation_gain | `250` | Maximum allowed vertical elevation change in metres for the activities
-min_cellphone_service | `0` | Minumum required cell reception level in the area
-max_cellphone_service | `2` | Maximum allowed cell reception level in the area
-min_quality | `0` | Minumum required playing surface quality for the sporting activity
-max_quality | `2` | Minumum required playing surface quality for the sporting activity
+sw                    | `'-73.58,45.51'`          | Bounding box corner (South West)
+ne                    | `'-73.08,45.91'`          | Bounding box corner (North East)
+origin                | `'-73.58,45.51'`          | Central point from which to search for places
+radius                | `10`                      | Number of kilometres around the origin to search
+user_origin           | `'-73.08,45.91'`          | The current location of the end-user making the request. Used to calculate proximity.
+sports                | `'175,160'`               | Filters results based on Decathlon Sport ID
+tags                  | `'free,equipment_rental'` | Restricts search results to only those matching all set tags
+surface               | `clay,concrete`           | Restricts search results to only those matching specified surface types
+min_difficulty        | `0`                       | Integer [0, 1, 2] representing the minimum difficulty level
+max_difficulty        | `2`                       | Integer [0, 1, 2] representing the maximum difficulty level
+min_duration          | `60`                      | Minimum number of minutes for the sporting activities
+max_duration          | `3660`                    | Maximum number of minutes allowed for the sporting activities
+min_distance          | `10`                      | Minimum required distance in metres for the activities
+max_distance          | `100`                     | Maximum allowed distance in metres for the activities
+min_elevation_gain    | `50`                      | Minimum required vertical elevation change in metres for the activities
+max_elevation_gain    | `250`                     | Maximum allowed vertical elevation change in metres for the activities
+min_cellphone_service | `0`                       | Minumum required cell reception level in the area
+max_cellphone_service | `2`                       | Maximum allowed cell reception level in the area
+min_quality           | `0`                       | Minumum required playing surface quality for the sporting activity
+max_quality           | `2`                       | Minumum required playing surface quality for the sporting activity
+
+
+## Adding Places
+
+```shell
+curl 
+  -X POST 
+  -H "Content-Type: application/json" 
+  -d "@data.json" 
+  https://sportplaces-api.herokuapp.com/api/v1/places
+```
+
+> JSON request [@data.json]
+
+```json
+{
+  "google_place_id":"ChIJm7QDm0Y36IkRbbD20K2fC24",
+  "activities": [
+    {
+      "sport_id": "175",
+      "tags": ["free"],
+      "distance": 10,
+      "difficulty": 2
+    },
+    {
+      "sport_id": "160",
+      "tags": ["free"],
+      "distance": 10,
+      "difficulty": 2,
+      "duration": 10,
+      "elevation_gain": 0,
+      "cellphone_service": 1
+    }
+  ]
+}
+```
+
+This endpoint creates places based on a Google Place ID and an Activity (Sport
+ID)
+
+### HTTP Request
+
+`POST https://sportplaces-api.herokuapp.com/api/v1/places`
+
+### Request Parameters
+
+`Google Place ID` and the `activities` array are mandatory.
+Within the Activities array are hashes that represent each activity and its
+filters
+
+#### Activity Properties
+
+Required properties: 
+
+Parameter | Example | Description
+--------- | ------- | -----------
+sport_id | `175`                 | Reference to the Sport this activity belongs to.
+tags     | `['free', 'lessons']` | Array of tags(strings). If they don't already exist, it will be automatically created.
+
+Filters are not required by default, but are highly recommended for a better
+user experience.
+Most filters will have a numeric value.
+
+> JSON response
+
+```json
+{
+    "type": "Feature",
+    "properties": {
+        "uuid": "750cbd99-a9b1-4d2f-a271-ba8866296cf6",
+        "name": "660 Terry Rd",
+        "google_place_id": "ChIJm7QDm0Y36IkRbbD20K2fC24",
+        "contact_details": {
+            "email": null,
+            "phone": null,
+            "website": null,
+            "booking_url": null,
+            "facebook_username": null
+        },
+        "address_components": {
+            "address": "660 Terry Road",
+            "city": "Hauppauge",
+            "province": "New York",
+            "country": "US"
+        },
+        "activities": [
+            {
+                "sport_id": 175,
+                "tags": [
+                    "free"
+                ],
+                "difficulty": 2,
+                "distance": 10
+            },
+            {
+                "sport_id": 160,
+                "tags": [
+                    "free"
+                ],
+                "difficulty": 2,
+                "duration": 10,
+                "distance": 10,
+                "elevation_gain": 0,
+                "cellphone_service": 1
+            }
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -73.167277,
+            40.8188078
+        ]
+    }
+}
+```
+
+> Errors
+
+Errors will be responded to with specific error information, and an `HTTP 422` status code.
