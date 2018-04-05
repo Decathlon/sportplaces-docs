@@ -131,7 +131,8 @@ curl
       "elevation_gain": 0,
       "cellphone_service": 1
     }
-  ]
+  ],
+  "notes": "Lorem Ipsum dolor amet sit..."
 }
 ```
 
