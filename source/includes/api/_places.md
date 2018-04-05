@@ -156,7 +156,7 @@ Required properties:
 Parameter | Example | Description
 --------- | ------- | -----------
 sport_id | `175`                 | Reference to the Sport this activity belongs to.
-tags     | `['free', 'lessons']` | Array of tags(strings). If they don't already exist, it will be automatically created.
+tags     | `['free', 'lessons']` | (optional) Array of tags(strings). If they don't already exist, it will be automatically created.
 
 Filters are not required by default, but are highly recommended for a better
 user experience.
@@ -171,6 +171,14 @@ Most filters will have a numeric value.
         "uuid": "750cbd99-a9b1-4d2f-a271-ba8866296cf6",
         "name": "660 Terry Rd",
         "google_place_id": "ChIJm7QDm0Y36IkRbbD20K2fC24",
+        "user": [
+            {
+                "user_id": "1235781113",
+                "first_name": "John",
+                "last_name": "Doe",
+                "staff": true
+            }
+        ],
         "contact_details": {
             "email": null,
             "phone": null,
