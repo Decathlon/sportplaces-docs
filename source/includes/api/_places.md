@@ -148,6 +148,19 @@ ID)
 Within the Activities array are hashes that represent each activity and its
 filters
 
+#### Activity Properties
+
+Required properties: 
+
+Parameter | Example | Description
+--------- | ------- | -----------
+sport_id | `175`                 | Reference to the Sport this activity belongs to.
+tags     | `['free', 'lessons']` | (optional) Array of tags(strings). If they don't already exist, it will be automatically created.
+
+Filters are not required by default, but are highly recommended for a better
+user experience.
+Most filters will have a numeric value.
+
 
 ## Updating/Editing Places
 ```shell
@@ -159,6 +172,7 @@ curl
 ```
 
 > JSON request [@data.json]
+
 ```json
 {
   "name": "McGee Park",
@@ -198,18 +212,7 @@ province          | `'QC'`                           | Province where place is l
 country           | `'CA'`                           | Country code where place is located
 notes             | `'Lorem Ipsum ...'`              | Arbitrary notes provided by the user
 
-#### Activity Properties
 
-Required properties: 
-
-Parameter | Example | Description
---------- | ------- | -----------
-sport_id | `175`                 | Reference to the Sport this activity belongs to.
-tags     | `['free', 'lessons']` | (optional) Array of tags(strings). If they don't already exist, it will be automatically created.
-
-Filters are not required by default, but are highly recommended for a better
-user experience.
-Most filters will have a numeric value.
 
 > JSON response
 
@@ -273,7 +276,6 @@ Most filters will have a numeric value.
 }
 ```
 
-
 ## Updating/Editing Activities of a Place
 ```shell
 curl
@@ -284,6 +286,7 @@ curl
 ```
 
 > JSON request [@data.json]
+
 ```json
 {
   "tags": ["free"],
