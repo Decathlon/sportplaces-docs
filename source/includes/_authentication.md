@@ -2,18 +2,18 @@
 
 ```shell
 curl "https://sportplaces-api.herokuapp.com/api/v1/places"
-  -H "apikey: XXXXXX"
+  -H "Authorization: Bearer XXXXXX"
 ```
 
 **`GET` requests do not require authentication.**
 
-Until we are able to obtain usage of the Decathlon Connect API with OAuth2, a static API key is used for all `POST`,
-`PUT`, and `DELETE` requests. This means that your code must not be published to the public internet. It is forbidden to
-publish an application that contains this key. Remember: this is for internal use only.
+A JWT token is required for all `POST`, `PUT/PATCH`, and `DELETE` requests. 
+To obtain a token please refer to the **Decathlon Connect API**
 
-You must present the API key in a header called: `apikey`
+You must authenticate your requests with an API token in the header.
+E.g.: `Authorization: Bearer XXXXXXXXXX`
 
 <aside class="notice">
-  You can obtain the API key by contacting the development team through our 
+  You can obtain access to Decathlon Connect API by contacting the development team through our 
   <a href="https://plus.google.com/u/2/communities/110282251333522025242">Google Community</a>
 </aside>

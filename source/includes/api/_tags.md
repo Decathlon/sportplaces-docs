@@ -25,7 +25,7 @@ Retrieves a list of tags that have been applied to a sporting activity at a plac
 ```shell
 curl -X POST \
   https://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92ab-5ebd23f68d54/activities/160/tags \
-  -H 'apikey: XXXXXX' \
+  -H 'Authorization: Bearer XXXXXX' \
   -d '{
 	  "slug": "lessons"
   }'
@@ -51,7 +51,7 @@ Adds a new tag to a sporting activity at a specified place. This tag **MUST** be
 ```shell
 curl -X DELETE \
   https://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92ab-5ebd23f68d54/activities/160/tags/lessons \
-  -H 'apikey: XXXXXX'
+  -H 'Authorization: Bearer XXXXXX'
 ```
 
 > JSON response:

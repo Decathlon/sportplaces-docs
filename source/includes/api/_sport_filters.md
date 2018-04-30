@@ -27,7 +27,7 @@ activities to a place.
 ```shell
 curl -X POST \
   https://sportplaces-api.herokuapp.com/api/v1/sports/186/filters \
-  -H 'apikey: XXXXXX' \
+  -H 'Authorization: Bearer XXXXXX' \
   -d '{"slug": "difficulty"}'
 ```
 
@@ -61,7 +61,7 @@ Adds a new filter to the allowed list for a specified sport. **MUST** be one of 
 ```shell
 curl -X DELETE \
   https://sportplaces-api.herokuapp.com/api/v1/sports/186/filters/difficulty \
-  -H 'apikey: XXXXXX' \
+  -H 'Authorization: Bearer XXXXXX' \
 ```
 
 > JSON response:

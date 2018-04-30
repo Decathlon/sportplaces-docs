@@ -105,6 +105,7 @@ max_quality           | `2`                       | Minumum required playing sur
 curl 
   -X POST 
   -H "Content-Type: application/json" 
+  -H 'Authorization: Bearer XXXXXX'
   -d "@data.json" 
   https://sportplaces-api.herokuapp.com/api/v1/places
 ```
@@ -167,6 +168,7 @@ Most filters will have a numeric value.
 curl
   -X PUT
   -H "Content-Type: application/json"
+  -H 'Authorization: Bearer XXXXXX'
   -d "@data.json"
   https://sportplaces-api.herokuapp.com/api/v1/places/:place_id
 ```
@@ -281,6 +283,7 @@ notes             | `'Lorem Ipsum ...'`              | Arbitrary notes provided 
 curl
   -X PUT
   -H "Content-Type: application/json"
+  -H 'Authorization: Bearer XXXXXX'
   -d "@data.json"
   https://sportplaces-api.herokuapp.com/api/v1/places/:place_id/activities/:activity_id
 ```

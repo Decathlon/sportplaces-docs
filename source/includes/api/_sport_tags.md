@@ -29,7 +29,7 @@ activities to a place.
 ```shell
 curl -X POST \
   https://sportplaces-api.herokuapp.com/api/v1/sports/186/tags \
-  -H 'apikey: XXXXXX' \
+  -H 'Authorization: Bearer XXXXXX' \
   -d '{"slug": "grocery_store"}'
 ```
 
@@ -47,11 +47,13 @@ curl -X POST \
 
 Adds a new tag to the allowed list for a specified sport. **MUST** be one of the following:
 
+* `beach`
+* `equipment_rental`
 * `free`
 * `grocery_store`
-* `equipment_rental`
 * `lessons`
 * `outdoor`
+* `club`
 * `space_for_children"`
 
 ### HTTP Request
@@ -63,7 +65,7 @@ Adds a new tag to the allowed list for a specified sport. **MUST** be one of the
 ```shell
 curl -X DELETE \
   https://sportplaces-api.herokuapp.com/api/v1/sports/186/tags/grocery_store \
-  -H 'apikey: XXXXXX' \
+  -H 'Authorization: Bearer XXXXXX' \
 ```
 
 > JSON response:

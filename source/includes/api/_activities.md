@@ -39,7 +39,7 @@ Retrieves a list of sporting activities at a place.
 ```shell
 curl -X POST \
   https://sportplaces-api.herokuapp.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities \
-  -H 'apikey: XXXXXX' \
+  -H 'Authorization: Bearer XXXXXX' \
   -d '{
   {
     "sport_id": 150,
@@ -73,7 +73,7 @@ in the allowed filters for the sport.
 ```shell
 curl -X DELETE \
   https://sportplaces-api.herokuapp.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities/150 \
-  -H 'apikey: XXXXXX' \
+  -H 'Authorization: Bearer XXXXXX' \
 ```
 
 > JSON response:
