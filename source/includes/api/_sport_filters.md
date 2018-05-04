@@ -36,7 +36,7 @@ curl -X POST \
 ```json
 [
     "size",
-    "quality"
+    "quality",
     "difficulty"
 ]
 ```

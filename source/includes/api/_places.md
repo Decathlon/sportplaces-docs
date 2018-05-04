@@ -76,8 +76,8 @@ The fields `difficulty`, `cellphone_service`, and `quality` are integer values `
 
 Search query errors will be responded to with specific error information, and an `HTTP 422` status code.
 
-Parameter | Example | Description
---------- | ------- | -----------
+Parameter             | Example                   | Description
+---------             | -------                   | -----------
 sw                    | `'-73.58,45.51'`          | Bounding box corner (South West)
 ne                    | `'-73.08,45.91'`          | Bounding box corner (North East)
 origin                | `'-73.58,45.51'`          | Central point from which to search for places
@@ -153,10 +153,10 @@ filters
 
 Required properties: 
 
-Parameter | Example | Description
---------- | ------- | -----------
-sport_id | `175`                 | Reference to the Sport this activity belongs to.
-tags     | `['free', 'lessons']` | (optional) Array of tags(strings). If they don't already exist, it will be automatically created.
+Parameter | Example               | Description
+--------- | -------               | -----------
+sport_id  | `175`                 | Reference to the Sport this activity belongs to.
+tags      | `['free', 'lessons']` | (optional) Array of tags(strings). If they don't already exist, it will be automatically created.
 
 Filters are not required by default, but are highly recommended for a better
 user experience.
