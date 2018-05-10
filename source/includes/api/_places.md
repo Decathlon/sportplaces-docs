@@ -66,7 +66,7 @@ must both be sent together if one is.
 Coordinates (`sw`, `ne`, `origin`, `user_origin`) are comma separated string representations of geographic locations. As
 per the GeoJSON standard, these are formatted as: `lng,lat` - the reverse of several other standards.
 
-A bounding box (set by `sw` & `ne`), or the `radius` must not excede 100km in length.
+A bounding box (set by `sw` & `ne`), or the `radius` must not exceed 100km in length.
 
 Min/max value pairs do not both need to be specified. For example, use only `min_distance=300` to find activities with
 a distance of over 300 metres, with no upper limit. 
@@ -94,10 +94,13 @@ min_distance          | `10`                      | Minimum required distance in
 max_distance          | `100`                     | Maximum allowed distance in metres for the activities
 min_elevation_gain    | `50`                      | Minimum required vertical elevation change in metres for the activities
 max_elevation_gain    | `250`                     | Maximum allowed vertical elevation change in metres for the activities
-min_cellphone_service | `0`                       | Minumum required cell reception level in the area
+min_cellphone_service | `0`                       | Minimum required cell reception level in the area
 max_cellphone_service | `2`                       | Maximum allowed cell reception level in the area
-min_quality           | `0`                       | Minumum required playing surface quality for the sporting activity
-max_quality           | `2`                       | Minumum required playing surface quality for the sporting activity
+min_quality           | `0`                       | Minimum required playing surface quality for the sporting activity
+max_quality           | `2`                       | Minimum required playing surface quality for the sporting activity
+limit                 | `10`                      | Number of records to be returned per call
+created_at            | `desc`                    | Order of results by creation date (asc or desc)
+days                  | `7`                       | Number of days from now from which places have been created
 
 ## Adding Places
 
@@ -207,7 +210,7 @@ email             | `'john.doe@example.com'`         | Contact Email
 phone             | `'1 555 555 5555 ext 123'`       | Phone number
 website           | `'https://example.com'`          | Venue Website
 booking_url       | `'https://example.com/book-now'` | Booking Website
-facebook_username | `'mcgee-park'`                   | Username at Facebook
+facebook_username | `'mcgee-park'`                   | Username on Facebook
 address           | `'123 Easy St.'`                 | Street address
 city              | `'Montreal'`                     | City where place is located
 province          | `'QC'`                           | Province where place is located
