@@ -22,11 +22,3 @@ includes:
 
 search: true
 ---
-
-# Introduction
-
-The Decathlon Sport Places API can be used by any developer worldwide to obtain details of geographic locations where 
-certain sports can be played. This data is primarily sourced from Decathlon's global network of sport experts.
-
-An API key is only required when modifying data - something we plan to restrict to Decathlon employees only. No key is
-needed to read data.
