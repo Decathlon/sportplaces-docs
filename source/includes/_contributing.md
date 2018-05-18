@@ -1,3 +1,4 @@
+<hr class="hr-section-sep">
 # Contributing
 
 **Everyone** is encouraged to help improve this project.

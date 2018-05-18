@@ -1,3 +1,4 @@
+<hr class="hr-section-sep">
 # Authentication
 
 ```shell

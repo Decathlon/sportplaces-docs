@@ -164,3 +164,16 @@ table::-webkit-scrollbar-thumb {
     color: $code-color;
   }
 }
+
+.hr-section-sep {
+  margin: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 1px solid #eaeaea !important;
+  width: 49.9%;
+  position: relative;
+  top: 1px;
+}
+
+.hr-section-sep+p {
+  margin: 0;
+}
