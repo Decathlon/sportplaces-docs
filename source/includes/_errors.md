@@ -1,3 +1,4 @@
+<hr class="hr-section-sep">
 # Errors
 
 The Sport Places API uses the following error codes:

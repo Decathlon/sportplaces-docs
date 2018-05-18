@@ -241,7 +241,7 @@ body {
   // half of the content always this background color.
   .dark-box {
     width: $examples-width;
-    background-color: #fff;
+    background-color: #f9f9f9;
     position: absolute;
     right: 0;
     top: 0;
@@ -348,7 +348,7 @@ body {
     font-size: 19px;
     margin-top: 4em;
     margin-bottom: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #eaeaea;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     background-image: linear-gradient(to bottom, rgba(#fff, 0.2), rgba(#fff, 0));
@@ -485,7 +485,7 @@ body {
 .content {
   pre,
   blockquote {
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     color: #fff;
     margin: 0;
     width: $examples-width;

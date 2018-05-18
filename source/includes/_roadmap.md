@@ -1,3 +1,4 @@
+<hr class="hr-section-sep">
 # Roadmap
 
 ## 1.0
