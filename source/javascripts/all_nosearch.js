@@ -14,9 +14,3 @@ $(function () {
 window.onpopstate = function () {
   activateLanguage(getLanguageFromQueryString());
 };
-
-$(document).ready(function () {
-  $('.down-arrow').click(function () {
-    console.log('sdfdsfds')
-  })
-})
