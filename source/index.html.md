@@ -9,6 +9,7 @@ toc_footers:
 
 includes:
   - geojson
+  - client_applications
   - authentication
   - errors
   - api/places
