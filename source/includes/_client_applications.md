@@ -6,7 +6,7 @@
 ```shell
 curl --request POST \
   --url 'https://decathlon.auth0.com/oidc/register' \
-  --header 'content-type: client/json' \
+  --header 'content-type: application/json' \
   --data '{"client_name":"My Dynamic Client","redirect_uris": ["https://client.example.com/callback"]}'
 ```
 
