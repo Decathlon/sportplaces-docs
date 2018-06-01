@@ -11,9 +11,15 @@ curl "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.582,45.511&
 
 ```json
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
+    "links": {
+        "self": "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.5826985%2C45.5119864&page=1&radius=99",
+        "next": "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.5826985%2C45.5119864&page=2&radius=99"
+    },
+    "count": 100,
+    "data": {
+      "type": "FeatureCollection",
+      "features": [
+          {
             "type": "Feature",
             "properties": {
                 "uuid": "8b1e3027-e438-42c2-92ab-5ebd23f68d54",
@@ -50,10 +56,12 @@ curl "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.582,45.511&
             }
         }
     ]
+  }
 }
+
 ```
 
-This endpoint retrieves all places meeting specific criteria
+This endpoint retrieves all places meeting specific criteria.
 
 ### HTTP Request
 
@@ -67,6 +75,9 @@ must both be sent together if one is.
 Coordinates (`sw`, `ne`, `origin`, `user_origin`) are comma separated string representations of geographic locations. As
 per the GeoJSON standard, these are formatted as: `lng,lat` - the reverse of several other standards.
 
+Results are ordered by proximity to the `user_origin` or `origin` if the former
+isn't provided.
+
 A bounding box (set by `sw` & `ne`), or the `radius` must not exceed 100km in length.
 
 Min/max value pairs do not both need to be specified. For example, use only `min_distance=300` to find activities with
@@ -74,6 +85,9 @@ a distance of over 300 metres, with no upper limit.
 
 The fields `difficulty`, `cellphone_service`, and `quality` are integer values `[0, 1, 2]` representing 
 `['Beginner', 'Intermediate', 'Advanced']`, or `['poor', 'acceptable', 'good']`.
+
+The number of results per page is limited to a max of 100. 
+E.g.: `&page=2` should give you the remaining set of results.
 
 Search query errors will be responded to with specific error information, and an `HTTP 422` status code.
 
@@ -102,6 +116,7 @@ max_quality           | `2`                       | Minimum required playing sur
 limit                 | `10`                      | Number of records to be returned per call
 created_at            | `desc`                    | Order of results by creation date (asc or desc)
 days                  | `7`                       | Number of days from now from which places have been created
+page                  | `2`                       | Number of pagination of results
 
 ## Adding Places
 
