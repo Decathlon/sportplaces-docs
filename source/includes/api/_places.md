@@ -181,6 +181,11 @@ Filters are not required by default, but are highly recommended for a better
 user experience.
 Most filters will have a numeric value.
 
+*Warning:* If a `google_place_id` has already been added, that Place will be
+updated with the new Activities provided in the JSON request. This is a
+non-destructive method, however. Activities are not reset upon each request.
+
+
 
 ## Updating/Editing Places
 ```shell
