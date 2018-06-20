@@ -23,7 +23,7 @@ You can now see the docs at [http://localhost:4567](http://localhost:4567)
 ## Deploying
 
 These docs are hosted on Heroku at: 
-[https://sportplaces-docs.herokuapp.com/index.html](https://sportplaces-docs.herokuapp.com/index.html)
+[http://developers.decathlon.com/sportplaces/](http://developers.decathlon.com/sportplaces/)
 
 1) Install and configure the [Heroku CLI tools](https://devcenter.heroku.com/articles/heroku-cli) on your machine
 2) Authenticate to Heroku using `heroku login`
