@@ -1,21 +1,36 @@
-<hr class="hr-section-sep">
 # Contributing
 
 **Everyone** is encouraged to help improve this project.
+We're open to feature requests, suggestions and new implementations.
 
-Here are some ways *you* can contribute:
+## How to
 
-* by reporting bugs, typos and missing docs
-* by suggesting new features
-* by writing or editing documentation
-* by writing specifications
-* by writing code ( **no patch is too small** : fix typos, add comments, clean up inconsistent whitespace )
-* by refactoring sample code
+### General public
 
-## Submitting a Pull Request
+You can send us your suggestions, bug reports and feature requests to:
 
-1. Fork/Clone the Repository
-2. Create a *[new-feature]* branch
+Email: [canadait@decathlon.net](mailto:canadait@decathlon.net)
+
+### Core team
+
+Contributions are made using the [Git Flow](https://www.atlassian.com/git/tutorials/making-a-pull-request) workflow.
+
+Once code is reviewed and approved, the changes are then merged into our `master` branch.
+
+1. Fork the [Repository](https://gitlab.decathlon.net/sportplaces/api)
+2. Create a `[new-feature]` branch.
 3. Implement your feature or bug fix.
 4. Add, commit, and push your changes.
-5. Submit a Pull Request through Gitlab's UI.
+  - `git add -A`
+  - `git commit -m "Brief explanation of the implementation"`
+  - `git push`
+5. Submit a [Merge Request](https://gitlab.decathlon.net/sportplaces/api/merge_requests/new) through [Gitlab](https://gitlab.decathlon.net/sportplaces/api/)
+
+## Contribution examples
+
+* Reporting bugs, typos and missing docs
+* Suggesting new features
+* Writing or editing documentation
+* Writing specifications
+* Writing code ( **no patch is too small** : fix typos, add comments, clean up inconsistent whitespace )
+* Refactoring sample code
