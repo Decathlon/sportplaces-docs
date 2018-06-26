@@ -9,7 +9,7 @@ We're open to feature requests, suggestions and new implementations.
 
 You can send us your suggestions, bug reports and feature requests to:
 
-Email: [canadait@decathlon.net](mailto:canadait@decathlon.net)
+Email: [developers@decathlon.com](developers@decathlon.com)
 
 ### Core team
 
