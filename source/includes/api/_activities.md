@@ -89,3 +89,54 @@ Removes a sporting activity from a place based on its sport ID.
 ### HTTP Request
 
 `DELETE https://sportplaces-api.herokuapp.com/api/v1/places/PLACE_UUID/activities/SPORT_ID`
+
+## Uploading Pictures to Activities
+
+```shell
+curl -X POST \
+  https://sportplaces-api.herokuapp.com/v1/places/*:place_id*/activities/*:activity_id*/images \
+  -H 'Authorization: Bearer XXXXXX' \
+  -H 'content-type: multipart/form-data' \
+  -F '=@/path/to/the/image.png'
+```
+
+> JSON response:
+
+```json
+{
+  "sport_id": 175,
+  "tags": ["equipment_rental"],
+  "photo_reference": "CmRaAAAAN3qk1mKFY6G...",
+  "user": {
+    "id": 1,
+    "first_name": "Decathlon",
+    "last_name": "Canada",
+    "staff": true
+  },
+  "attributes": {},
+  "image": {
+    "url": "/remote/path/to/the/image.png"
+  }
+}
+```
+
+Pictures can be uploaded to an activity of a place via a file upload form as
+such.
+
+Only files of the image type are accepted (png, jpg, jpeg, bmp)
+
+Uploads a picture to an activity within a place, based on the place ID and the
+activity ID.
+
+### HTTP Request
+
+`POST https://sportplaces-api.herokuapp.com/v1/places/:place_id/activities/:activity_id/images`
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
