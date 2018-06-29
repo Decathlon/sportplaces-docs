@@ -236,7 +236,7 @@ address           | `'123 Easy St.'`                 | Street address
 city              | `'Montreal'`                     | City where place is located
 province          | `'QC'`                           | Province where place is located
 country           | `'CA'`                           | Country code where place is located
-notes             | `'Lorem Ipsum ...'`              | Arbitrary notes provided by the user
+notes             | `'Lorem Ipsum ...'`              | Localized arbitrary notes provided by the user.
 
 
 

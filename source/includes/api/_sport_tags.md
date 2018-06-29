@@ -77,7 +77,18 @@ curl -X DELETE \
 ```
 
 Removes a specific tag from the allowed list for a given sport.
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 ### HTTP Request
 
 `DELETE https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID/tags/TAG_SLUG`
+

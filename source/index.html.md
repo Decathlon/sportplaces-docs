@@ -18,6 +18,7 @@ includes:
   - api/sports
   - api/sport_filters
   - api/sport_tags
+  - localization
   - featured_apps
   - contributing
   - roadmap
