@@ -2,7 +2,7 @@
 
 ```shell
 curl 
-  -X POST
+  -X PUT
   -H "Accept-Language:fr-CA"
   -H 'Authorization: Bearer XXXXXX'
   -d "@data.json" 
