@@ -4,7 +4,7 @@
 ## Search for places
 
 ```shell
-curl "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.582,45.511&radius=99&sports=175"
+curl "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&radius=99&sports=175"
 ```
 
 > JSON response:
@@ -12,8 +12,8 @@ curl "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.582,45.511&
 ```json
 {
     "links": {
-        "self": "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.5826985%2C45.5119864&page=1&radius=99",
-        "next": "https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.5826985%2C45.5119864&page=2&radius=99"
+        "self": "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.5826985%2C45.5119864&page=1&radius=99",
+        "next": "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.5826985%2C45.5119864&page=2&radius=99"
     },
     "count": 100,
     "data": {
@@ -65,7 +65,7 @@ This endpoint retrieves all places meeting specific criteria.
 
 ### HTTP Request
 
-`GET https://sportplaces-api.herokuapp.com/api/v1/places`
+`GET https://sportplaces.api.decathlon.com/api/v1/places`
 
 ### Query Parameters
 
@@ -126,7 +126,7 @@ curl
   -H "Content-Type: application/json" 
   -H 'Authorization: Bearer XXXXXX'
   -d "@data.json" 
-  https://sportplaces-api.herokuapp.com/api/v1/places
+  https://sportplaces.api.decathlon.com/api/v1/places
 ```
 
 > JSON request [@data.json]
@@ -160,7 +160,7 @@ ID)
 
 ### HTTP Request
 
-`POST https://sportplaces-api.herokuapp.com/api/v1/places`
+`POST https://sportplaces.api.decathlon.com/api/v1/places`
 
 ### Request Parameters
 
@@ -194,7 +194,7 @@ curl
   -H "Content-Type: application/json"
   -H 'Authorization: Bearer XXXXXX'
   -d "@data.json"
-  https://sportplaces-api.herokuapp.com/api/v1/places/:place_id
+  https://sportplaces.api.decathlon.com/api/v1/places/:place_id
 ```
 
 > JSON request [@data.json]
@@ -220,7 +220,7 @@ This endpoint updates places parameters.
 
 ### HTTP Request
 
-`POST https://sportplaces-api.herokuapp.com/api/v1/places/:place_id`
+`POST https://sportplaces.api.decathlon.com/api/v1/places/:place_id`
 
 ### Request Parameters
 
@@ -309,7 +309,7 @@ curl
   -H "Content-Type: application/json"
   -H 'Authorization: Bearer XXXXXX'
   -d "@data.json"
-  https://sportplaces-api.herokuapp.com/api/v1/places/:place_id/activities/:activity_id
+  https://sportplaces.api.decathlon.com/api/v1/places/:place_id/activities/:activity_id
 ```
 
 > JSON request [@data.json]
@@ -326,7 +326,7 @@ This endpoint updates activities of a particular place
 
 ### HTTP Request
 
-`POST https://sportplaces-api.herokuapp.com/api/v1/places/:place_id/activities/:activity_id`
+`POST https://sportplaces.api.decathlon.com/api/v1/places/:place_id/activities/:activity_id`
 
 ### Request Parameters
 

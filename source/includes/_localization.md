@@ -6,7 +6,7 @@ curl
   -H "Accept-Language:fr-CA"
   -H 'Authorization: Bearer XXXXXX'
   -d "@data.json" 
-  "https://sportplaces-api.herokuapp.com/api/v1/places/:place_id"
+  "https://sportplaces.api.decathlon.com/api/v1/places/:place_id"
 ```
 > JSON request [@data.json]
 

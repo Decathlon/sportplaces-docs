@@ -3,7 +3,7 @@
 ## Get a list of allowed tags for a sport
 
 ```shell
-curl "https://sportplaces-api.herokuapp.com/api/v1/sports/186/tags"
+curl "https://sportplaces.api.decathlon.com/api/v1/sports/186/tags"
 ```
 
 > JSON response:
@@ -22,13 +22,13 @@ activities to a place.
 
 ### HTTP Request
 
-`GET https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID/tags`
+`GET https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/tags`
 
 ## Allow a tag for a sport
 
 ```shell
 curl -X POST \
-  https://sportplaces-api.herokuapp.com/api/v1/sports/186/tags \
+  https://sportplaces.api.decathlon.com/api/v1/sports/186/tags \
   -H 'Authorization: Bearer XXXXXX' \
   -d '{"slug": "grocery_store"}'
 ```
@@ -58,13 +58,13 @@ Adds a new tag to the allowed list for a specified sport. **MUST** be one of the
 
 ### HTTP Request
 
-`POST https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID/tags`
+`POST https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/tags`
 
 ## Remove a tag from a sport
 
 ```shell
 curl -X DELETE \
-  https://sportplaces-api.herokuapp.com/api/v1/sports/186/tags/grocery_store \
+  https://sportplaces.api.decathlon.com/api/v1/sports/186/tags/grocery_store \
   -H 'Authorization: Bearer XXXXXX' \
 ```
 
@@ -90,5 +90,5 @@ Removes a specific tag from the allowed list for a given sport.
 
 ### HTTP Request
 
-`DELETE https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID/tags/TAG_SLUG`
+`DELETE https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/tags/TAG_SLUG`
 

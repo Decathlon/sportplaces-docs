@@ -3,7 +3,7 @@
 ## Get a list of sports
 
 ```shell
-curl "https://sportplaces-api.herokuapp.com/api/v1/sports"
+curl "https://sportplaces.api.decathlon.com/api/v1/sports"
 ```
 
 > JSON response:
@@ -36,12 +36,12 @@ string format.
 
 ### HTTP Request
 
-`GET https://sportplaces-api.herokuapp.com/api/v1/sports`
+`GET https://sportplaces.api.decathlon.com/api/v1/sports`
 
 ## Show details for one sport
 
 ```shell
-curl "https://sportplaces-api.herokuapp.com/api/v1/sports/186"
+curl "https://sportplaces.api.decathlon.com/api/v1/sports/186"
 ```
 
 > JSON response:
@@ -67,4 +67,4 @@ Retrieves details for one specific sport. Included are the English name, and the
 
 ### HTTP Request
 
-`GET https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID`
+`GET https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID`

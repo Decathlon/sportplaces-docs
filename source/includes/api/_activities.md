@@ -3,7 +3,7 @@
 ## Get a list of activities for a sport
 
 ```shell
-curl "https://sportplaces-api.herokuapp.com/api/v1/places/8b1e3027-e438-42c2-92ab-5ebd23f68d54/activities"
+curl "https://sportplaces.api.decathlon.com/api/v1/places/8b1e3027-e438-42c2-92ab-5ebd23f68d54/activities"
 ```
 
 > JSON response:
@@ -32,13 +32,13 @@ Retrieves a list of sporting activities at a place.
 
 ### HTTP Request
 
-`GET https://sportplaces-api.herokuapp.com/api/v1/api/places/PLACE_UUID/activities`
+`GET https://sportplaces.api.decathlon.com/api/v1/api/places/PLACE_UUID/activities`
 
 ## Add a new activity
 
 ```shell
 curl -X POST \
-  https://sportplaces-api.herokuapp.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities \
+  https://sportplaces.api.decathlon.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities \
   -H 'Authorization: Bearer XXXXXX' \
   -d '{
   {
@@ -66,13 +66,13 @@ in the allowed filters for the sport.
 
 ### HTTP Request
 
-`POST https://sportplaces-api.herokuapp.com/api/v1/places/PLACE_UUID/activities`
+`POST https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID/activities`
 
 ## Remove an activity from a place
 
 ```shell
 curl -X DELETE \
-  https://sportplaces-api.herokuapp.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities/150 \
+  https://sportplaces.api.decathlon.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities/150 \
   -H 'Authorization: Bearer XXXXXX' \
 ```
 
@@ -88,13 +88,13 @@ Removes a sporting activity from a place based on its sport ID.
 
 ### HTTP Request
 
-`DELETE https://sportplaces-api.herokuapp.com/api/v1/places/PLACE_UUID/activities/SPORT_ID`
+`DELETE https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID/activities/SPORT_ID`
 
 ## Uploading Pictures to Activities
 
 ```shell
 curl -X POST \
-  https://sportplaces-api.herokuapp.com/v1/places/*:place_id*/activities/*:activity_id*/images \
+  https://sportplaces.api.decathlon.com/v1/places/*:place_id*/activities/*:activity_id*/images \
   -H 'Authorization: Bearer XXXXXX' \
   -H 'content-type: multipart/form-data' \
   -F '=@/path/to/the/image.png'
@@ -130,7 +130,7 @@ activity ID.
 
 ### HTTP Request
 
-`POST https://sportplaces-api.herokuapp.com/v1/places/:place_id/activities/:activity_id/images`
+`POST https://sportplaces.api.decathlon.com/v1/places/:place_id/activities/:activity_id/images`
 
 <br/>
 <br/>

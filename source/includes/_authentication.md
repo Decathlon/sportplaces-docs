@@ -2,7 +2,7 @@
 # Authentication
 
 ```shell
-curl "https://sportplaces-api.herokuapp.com/api/v1/places"
+curl "https://sportplaces.api.decathlon.com/api/v1/places"
   -H "Authorization: Bearer XXXXXX"
 ```
 

@@ -3,7 +3,7 @@
 ## Get a list of allowed filters for a sport
 
 ```shell
-curl "https://sportplaces-api.herokuapp.com/api/v1/sports/186/filters"
+curl "https://sportplaces.api.decathlon.com/api/v1/sports/186/filters"
 ```
 
 > JSON response:
@@ -20,13 +20,13 @@ activities to a place.
 
 ### HTTP Request
 
-`GET https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID/filters`
+`GET https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/filters`
 
 ## Allow a filter for a sport
 
 ```shell
 curl -X POST \
-  https://sportplaces-api.herokuapp.com/api/v1/sports/186/filters \
+  https://sportplaces.api.decathlon.com/api/v1/sports/186/filters \
   -H 'Authorization: Bearer XXXXXX' \
   -d '{"slug": "difficulty"}'
 ```
@@ -54,13 +54,13 @@ Adds a new filter to the allowed list for a specified sport. **MUST** be one of 
 
 ### HTTP Request
 
-`POST https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID/filters`
+`POST https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/filters`
 
 ## Remove a filter from a sport
 
 ```shell
 curl -X DELETE \
-  https://sportplaces-api.herokuapp.com/api/v1/sports/186/filters/difficulty \
+  https://sportplaces.api.decathlon.com/api/v1/sports/186/filters/difficulty \
   -H 'Authorization: Bearer XXXXXX' \
 ```
 
@@ -76,4 +76,4 @@ Removes a specific filter from the allowed list for a given sport.
 
 ### HTTP Request
 
-`DELETE https://sportplaces-api.herokuapp.com/api/v1/sports/SPORT_ID/filters/FILTER_SLUG`
+`DELETE https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/filters/FILTER_SLUG`
