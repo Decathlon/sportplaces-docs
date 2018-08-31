@@ -15,6 +15,5 @@ You must authenticate your requests with an API token in the header.
 E.g.: `Authorization: Bearer XXXXXXXXXX`
 
 <aside class="notice">
-  You can obtain access to Decathlon Connect API by contacting the development team through our 
-  <a href="https://plus.google.com/u/2/communities/110282251333522025242">Google Community</a>
+  You can obtain access to Decathlon Connect API by contacting the development team through our Google+ Community
 </aside>

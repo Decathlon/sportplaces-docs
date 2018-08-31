@@ -68,3 +68,4 @@ Removes a specific tag from a sporting activity at a location.
 ### HTTP Request
 
 `DELETE https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID/activities/SPORT_ID/tags/lessons`
+

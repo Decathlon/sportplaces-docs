@@ -10,16 +10,15 @@
   * Decathlon Connect Authentication
   * Release: April 2018
 
-
 ## 1.1
   * Load Google Image Reference on response.
   * Eliminate dependency on `google_place_id` and Google Geolocation in general.
   * Standardize Sports API to better organize hierarchy.
-  * Planned Release: June 2018
+  * Planned Release: August 2018
 
 ## 1.2
   * Use AI to better tailor recommendations based on arbitrary properties.
       * Likely models will be: mood-based, weather-based, proximity, user
           behaviour etc...
   * Add ability for users to upload their own photos and videos.
-  * Planned Release: July 2018
+  * Planned Release: September 2018

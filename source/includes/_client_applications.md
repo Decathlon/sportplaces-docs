@@ -18,8 +18,7 @@ have a dashboard to allow you to do this, so you must use their API directly. Do
 they are issued, so you will have no way to obtain them again.
 
 <aside class="notice">
-  Decathlon staff can obtain access to Decathlon Connect API by contacting the development team through our 
-  <a href="https://plus.google.com/u/2/communities/110282251333522025242">Google Community</a>
+  Decathlon staff can obtain access to Decathlon Connect API by contacting the development team through our Google+ Community
 </aside>
 
 ## Obtaining a JWT

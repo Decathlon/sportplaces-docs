@@ -158,6 +158,10 @@ curl
 This endpoint creates places based on a Google Place ID and an Activity (Sport
 ID)
 
+<aside class="warning">
+All places added via the Sport Places API go through moderation by someone from our team to make sure we have quality data stored.
+</aside>
+
 ### HTTP Request
 
 `POST https://sportplaces.api.decathlon.com/api/v1/places`
@@ -168,7 +172,7 @@ ID)
 Within the Activities array are hashes that represent each activity and its
 filters
 
-#### Activity Properties
+### Activity Properties
 
 Required properties: 
 
@@ -181,11 +185,11 @@ Filters are not required by default, but are highly recommended for a better
 user experience.
 Most filters will have a numeric value.
 
-*Warning:* If a `google_place_id` has already been added, that Place will be
+<aside class="notice">
+If a google_place_id has already been added, that Place will be
 updated with the new Activities provided in the JSON request. This is a
 non-destructive method, however. Activities are not reset upon each request.
-
-
+</aside>
 
 ## Updating/Editing Places
 ```shell

@@ -17,14 +17,14 @@ Contributions are made using the [Git Flow](https://www.atlassian.com/git/tutori
 
 Once code is reviewed and approved, the changes are then merged into our `master` branch.
 
-1. Fork the [Repository](https://gitlab.decathlon.net/sportplaces/api)
+1. Fork the [Repository](https://github.com/decathloncanada/sportplaces-api)
 2. Create a `[new-feature]` branch.
 3. Implement your feature or bug fix.
 4. Add, commit, and push your changes.
   - `git add -A`
   - `git commit -m "Brief explanation of the implementation"`
   - `git push`
-5. Submit a [Merge Request](https://gitlab.decathlon.net/sportplaces/api/merge_requests/new) through [Gitlab](https://gitlab.decathlon.net/sportplaces/api/)
+5. Submit a [Merge Request](https://gitlab.decathlon.net/sportplaces/api/merge_requests/new) through [GitHub](https://github.com/decathloncanada/sportplaces-api)
 
 ## Contribution examples
 
