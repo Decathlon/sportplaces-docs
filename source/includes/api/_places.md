@@ -118,6 +118,104 @@ created_at            | `desc`                    | Order of results by creation
 days                  | `7`                       | Number of days from now from which places have been created
 page                  | `2`                       | Number of pagination of results
 
+
+## Retrieving Place Information
+
+```shell
+curl "https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID"
+```
+
+> JSON response:
+
+```json
+{
+    "type": "Feature",
+    "properties": {
+        "uuid": "488c45cf-2d7c-4903-9477-01249966adcf",
+        "name": "Studio Bizz Mount Royal",
+        "proximity": null,
+        "user": {
+            "identifier": "0",
+            "first_name": "Decathlon",
+            "last_name": "IT",
+            "staff": true
+        },
+        "partner": null,
+        "created_at": "2018-04-16 03:19:21 UTC",
+        "google_place_id": "ChIJJSVAUdAbyUwRKvTXuACHnqg",
+        "contact_details": {
+            "email": null,
+            "phone": "+1 514-526-2499",
+            "website": null,
+            "booking_url": null,
+            "facebook_username": null
+        },
+        "address_components": {
+            "address": "551 Avenue du Mont-Royal Est",
+            "city": "Montréal",
+            "province": "Québec",
+            "country": "CA"
+        },
+        "activities": [
+            {
+                "sport_id": 100,
+                "tags": [
+                    "lessons"
+                ],
+                "photo_reference": "CmRaAAAA7zB04n0YClB-QsAYy5ajwJvw4FbGoPovFwsU0rnvzyXAPbhIrFIgBbD3YP4ktUiLAt08G_Ij0reuSkICg62ycKregB-bG93z9VBZlsKaQQ6_W3oxwSLi4z7m-3GP1NiIEhDIR732x9Vy3hlwiC2Wg4OhGhRGJ9RYl8yhYunKA5HBktDqWj1XRw",
+                "user": {
+                    "identifier": "0",
+                    "first_name": "Decathlon",
+                    "last_name": "IT",
+                    "staff": true
+                },
+                "attributes": {
+                    "difficulty": 0
+                },
+                "image": {}
+            },
+            {
+                "sport_id": 292,
+                "tags": [
+                    "lessons"
+                ],
+                "photo_reference": "CmRaAAAA7zB04n0YClB-QsAYy5ajwJvw4FbGoPovFwsU0rnvzyXAPbhIrFIgBbD3YP4ktUiLAt08G_Ij0reuSkICg62ycKregB-bG93z9VBZlsKaQQ6_W3oxwSLi4z7m-3GP1NiIEhDIR732x9Vy3hlwiC2Wg4OhGhRGJ9RYl8yhYunKA5HBktDqWj1XRw",
+                "user": {
+                    "identifier": "0",
+                    "first_name": "Decathlon",
+                    "last_name": "IT",
+                    "staff": true
+                },
+                "attributes": {
+                    "difficulty": 0
+                },
+                "image": {}
+            }
+        ],
+        "notes": "Cours de différents styles de danse, tous niveaux ( débutant à avancé). Cours pour enfants"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -73.581967,
+            45.525197
+        ]
+    }
+}
+```
+
+This endpoint retrieves data about a single place rather than a collection of
+places in a specific geolocation.
+
+### HTTP Request
+
+`GET https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID`
+
+### Query Parameters
+
+The only accepted (and required) parameter for this endpoint is the place UUID.
+<br/>
+
 ## Adding Places
 
 ```shell

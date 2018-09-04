@@ -32,7 +32,7 @@ Retrieves a list of sporting activities at a place.
 
 ### HTTP Request
 
-`GET https://sportplaces.api.decathlon.com/api/v1/api/places/PLACE_UUID/activities`
+`GET https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID/activities`
 
 ## Add a new activity
 
