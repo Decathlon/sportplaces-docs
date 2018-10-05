@@ -438,3 +438,90 @@ which are immutable.
 > Errors
 
 Errors will be responded to with specific error information, and an `HTTP 422` status code.
+
+## Places pending moderation
+```shell
+curl
+  -X GET
+  -H "Content-Type: application/json"
+  -H 'Authorization: Bearer XXXXXX'
+  https://sportplaces.api.decathlon.com/api/v1/places/pending
+```
+This endpoint lists places that were added by the user ID'ed by the JWT token and are pending moderation.
+
+> JSON response
+
+```json
+{
+    "type": "Feature",
+    "properties": {
+        "uuid": "fe56287f-a1ac-4b71-abe8-845bff595fce",
+        "name": "Park Street",
+        "proximity": null,
+        "user": {
+            "identifier": "31391277-4202-4d97-88ad-31caad2f9be4",
+            "first_name": "Caio",
+            "last_name": "Bianchi",
+            "staff": true
+        },
+        "partner": null,
+        "created_at": "2018-10-04 20:29:33 UTC",
+        "google_place_id": "ChIJU2s2Gz6uEmsRIuwzjuh3Qa0",
+        "contact_details": {
+            "email": null,
+            "phone": null,
+            "website": null,
+            "booking_url": null,
+            "facebook_username": null
+        },
+        "address_components": {
+            "address": "Park Street",
+            "city": "Sydney",
+            "province": "New South Wales",
+            "country": "AU"
+        },
+        "activities": [
+            {
+                "sport_id": 175,
+                "tags": [
+                    "free"
+                ],
+                "photo_reference": null,
+                "user": {
+                    "identifier": "31391277-4202-4d97-88ad-31caad2f9be4",
+                    "first_name": "Caio",
+                    "last_name": "Bianchi",
+                    "staff": true
+                },
+                "attributes": {
+                    "difficulty": 2,
+                    "distance": 10
+                },
+                "image": {}
+            }
+        ],
+        "notes": "Lorem Ipsum Dodfdflor Amet Sit"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            151.2099083,
+            -33.8732855
+        ]
+    }
+}
+```
+
+### HTTP Request
+
+`GET https://sportplaces.api.decathlon.com/api/v1/places/pending`
+
+### Request Parameters
+
+This GET request accepts no parameters.
+
+> Errors
+
+Errors will be responded to with specific error information, and an `HTTP 422` status code.
+
+<h2></h2>
