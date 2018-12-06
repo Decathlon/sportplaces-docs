@@ -42,8 +42,10 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&
                   {
                     "sport_id": 160,
                     "tags": [],
-                    "difficulty": 2,
-                    "distance": 10
+                    "attributes": {
+                      "difficulty": 2,
+                      "distance": 10
+                    }
                   }
                 ]
             },
@@ -242,11 +244,13 @@ curl
     {
       "sport_id": "160",
       "tags": ["free"],
-      "distance": 10,
-      "difficulty": 2,
-      "duration": 10,
-      "elevation_gain": 0,
-      "cellphone_service": 1
+      "attributes": {
+        "distance": 10,
+        "difficulty": 2,
+        "duration": 10,
+        "elevation_gain": 0,
+        "cellphone_service": 1
+      }
     }
   ],
   "notes": "Lorem Ipsum dolor amet sit..."
@@ -378,19 +382,23 @@ notes             | `'Lorem Ipsum ...'`              | Localized arbitrary notes
                 "tags": [
                     "free"
                 ],
-                "difficulty": 2,
-                "distance": 10
+                "attributes": {
+                  "difficulty": 2,
+                  "distance": 10
+                }
             },
             {
                 "sport_id": 160,
                 "tags": [
                     "free"
                 ],
-                "difficulty": 2,
-                "duration": 10,
-                "distance": 10,
-                "elevation_gain": 0,
-                "cellphone_service": 1
+                "attributes": {
+                  "difficulty": 2,
+                  "duration": 10,
+                  "distance": 10,
+                  "elevation_gain": 0,
+                  "cellphone_service": 1
+                }
             }
         ]
     },
@@ -420,8 +428,10 @@ curl
 {
   "tags": ["free"],
   "photo_reference": "1235ygfrt6547u4trgew23rfv[ew455",
-  "difficulty": 2,
-  "distance": 1
+  "attributes": {
+    "difficulty": 2,
+    "distance": 1
+  }
 }
 ```
 This endpoint updates activities of a particular place
