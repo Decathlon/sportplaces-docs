@@ -1,36 +1,20 @@
 # Contributing
 
 **Everyone** is encouraged to help improve this project.
-We're open to feature requests, suggestions and new implementations.
+We're open to feature requests, big ideas, suggestions and new implementations ;) 
 
-## How to
+## Stackoverflow
 
-### General public
+We encourage use to leverage the [https://stackoverflow.com/questions/tagged/sport-places-api](#sport-places-api) tag on StackOverflow.
 
-You can send us your suggestions, bug reports and feature requests to:
+## Twitter
 
-Email: [developers@decathlon.com](developers@decathlon.com)
+Tweet us at [https://twitter.com/decathlondev](@decathlondev)
 
-### Core team
+## Email
 
-Contributions are made using the [Git Flow](https://www.atlassian.com/git/tutorials/making-a-pull-request) workflow.
+For all other requests, suggestions, bug reports and feature requests please feel free to email us at [sportplacesapi@decathlon.com](sportplacesapi@decathlon.com)
 
-Once code is reviewed and approved, the changes are then merged into our `master` branch.
+## Become member of the core team
 
-1. Fork the [Repository](https://github.com/decathloncanada/sportplaces-api)
-2. Create a `[new-feature]` branch.
-3. Implement your feature or bug fix.
-4. Add, commit, and push your changes.
-  - `git add -A`
-  - `git commit -m "Brief explanation of the implementation"`
-  - `git push`
-5. Submit a [Merge Request](https://gitlab.decathlon.net/sportplaces/api/merge_requests/new) through [GitHub](https://github.com/decathloncanada/sportplaces-api)
-
-## Contribution examples
-
-* Reporting bugs, typos and missing docs
-* Suggesting new features
-* Writing or editing documentation
-* Writing specifications
-* Writing code ( **no patch is too small** : fix typos, add comments, clean up inconsistent whitespace )
-* Refactoring sample code
+To join Jack Hayter and Caio Bianchi as a core member. Please email us and we will talk git clone ;) 

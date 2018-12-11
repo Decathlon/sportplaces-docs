@@ -17,9 +17,6 @@ All third-party developers must obtain an application `client_id` and `client_se
 have a dashboard to allow you to do this, so you must use their API directly. Do not lose your client credentials once
 they are issued, so you will have no way to obtain them again.
 
-<aside class="notice">
-  Decathlon staff can obtain access to Decathlon Connect API by contacting the development team through our Google+ Community
-</aside>
 
 ## Obtaining a JWT
 
