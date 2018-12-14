@@ -1,24 +1,28 @@
 <hr class="hr-section-sep">
 # Roadmap
 
-## 1.0
+## 1.3 - Planned Q1 2019
+  * Eliminate dependency on `google_place_id` and Google Geolocation in general
+  * Use AI to better tailor recommendations based on arbitrary properties.
+      * Likely models will be: mood-based, weather-based, proximity, user
+          behaviour etc...
+  * Booking partner integrations (implemention details TBD)
+    * Storage or URLs for joining events identified by partner APIs
+    * Retrieval of events at locations as supplied by partner APIs
+
+## 1.2 - December 2018
+  * Add ability for users to upload their own photos and videos
+  * Reorganization of attributes and more explicit data types
+  * Storage of complex geometry types: lines & polygons
+
+## 1.1 - August 2018
+  * Load Google Image Reference on response
+  * Standardize Sports API to better organize hierarchy
+
+## 1.0 - April 2018
   * List all places using the GeoJSON format
   * Filter Places by Sport
   * Filter-based Search
   * Geolocation-based listing of places
   * Places crowdsourcing
   * Decathlon Connect Authentication
-  * Release: April 2018
-
-## 1.1
-  * Load Google Image Reference on response.
-  * Eliminate dependency on `google_place_id` and Google Geolocation in general.
-  * Standardize Sports API to better organize hierarchy.
-  * Planned Release: August 2018
-
-## 1.2
-  * Use AI to better tailor recommendations based on arbitrary properties.
-      * Likely models will be: mood-based, weather-based, proximity, user
-          behaviour etc...
-  * Add ability for users to upload their own photos and videos.
-  * Planned Release: September 2018
