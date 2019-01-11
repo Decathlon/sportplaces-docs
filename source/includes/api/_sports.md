@@ -27,6 +27,13 @@ curl "https://sportplaces.api.decathlon.com/api/v1/sports"
     ...
 }
 ```
+<aside class="warning">
+  This endpoint will be deprecated in the next version of the Sport Places
+  API, in favour of the <a href="https://developers.decathlon.com/sports">Sports
+  API</a>
+<br/>
+  * Note the HTTP Header <strong>X-Deprecation-Warning</strong> on the response.
+</aside>
 
 Retrieves a list of all supported Decathlon sports (as defined by Decathlon), plus the allowed tags and filters for
 each.
