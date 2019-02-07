@@ -13,9 +13,20 @@ Some HTML is also permitted, but keep it simple.
 
 ## Running a local instance
 
-```shell
-bundle install
-bundle exec middleman server
+Clone the repository
+```bash
+git clone https://github.com/Decathlon/sportplaces-docs.git
+cd sportplaces-docs
+```
+
+Build the Docker
+```bash
+docker-compose build
+```
+
+Run the container
+```bash
+docker-compose up
 ```
 
 You can now see the docs at [http://localhost:4567](http://localhost:4567)
@@ -28,7 +39,7 @@ These docs are hosted on Heroku at:
 1) Install and configure the [Heroku CLI tools](https://devcenter.heroku.com/articles/heroku-cli) on your machine
 2) Authenticate to Heroku using `heroku login`
 3) Add the Git remote to the `build` submodule:
-```shell
+```bash
 cd build
 git remote add heroku https://git.heroku.com/sportplaces-docs.git
 cd ..
