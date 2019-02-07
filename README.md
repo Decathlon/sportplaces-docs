@@ -16,6 +16,7 @@ Some HTML is also permitted, but keep it simple.
 Clone the repository
 ```bash
 git clone https://github.com/Decathlon/sportplaces-docs.git
+cd sportplaces-docs
 ```
 
 Build the Docker
