@@ -1,0 +1,8 @@
+.git
+.gitignore
+README.md
+Vagrantfile
+.editorconfig
+.travis.yml
+Dockerfile
+docker-compose.yml
