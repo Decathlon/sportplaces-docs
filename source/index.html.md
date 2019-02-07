@@ -8,6 +8,7 @@ toc_footers:
   - <a href='https://decathlon.ca'>Created by Décathlon Canada</a>
 
 includes:
+  - getstarted
   - geojson
   - client_applications
   - authentication

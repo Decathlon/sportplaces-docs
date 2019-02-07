@@ -11,7 +11,7 @@ curl --request POST \
 ```
 
 A JWT token is required for all `POST`, `PUT/PATCH`, and `DELETE` requests. 
-Currently we use Auth0 to issue JWTs for third-party developers, and Decathlon Connect for internal apps.
+Currently we use Auth0 to issue JWTs for third-party developers, and [Decathlon Login](https://developers.decathlon.com/products) if you are part of Decathlon partner program.
 
 All third-party developers must obtain an application `client_id` and `client_secret` from Auth0. Currently we do not
 have a dashboard to allow you to do this, so you must use their API directly. Do not lose your client credentials once

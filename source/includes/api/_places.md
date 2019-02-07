@@ -1,5 +1,5 @@
 <hr class="hr-section-sep">
-# Places
+# Sport Places
 
 ## Search for places
 
@@ -63,7 +63,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&
 
 ```
 
-This endpoint retrieves all places meeting specific criteria.
+This endpoint retrieves all the sport places meeting specific criteria.
 
 ### HTTP Request
 
