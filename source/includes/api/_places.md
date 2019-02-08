@@ -1,7 +1,9 @@
 <hr class="hr-section-sep">
 # Sport Places
 
-## Search for places
+This endpoint retrieves all the sport places meeting specific criterias. 
+
+## Concrete example
 
 ```shell
 curl "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&radius=99&sports=175"
@@ -63,7 +65,25 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&
 
 ```
 
-This endpoint retrieves all the sport places meeting specific criteria.
+
+### Return all ice hockey sport places within 99km around McGill University in Montréal, Canada.
+
+
+Parameter             | Value                     | Description
+---------             | -------                   | -----------
+sports                | 175                       | 175 is the **sport id** for **ice hockey** as per our [Sports API](https://developers.decathlon.com/sports)
+origin                | -73.582,45.511            | longitude,latitude of your location
+radius                | 99                        | 99km around my latitude and longtitude
+
+Go ahead and copy and paste this request in your browser to test it.
+
+`https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&radius=99&sports=175`
+
+Works? Great! 
+
+Keep reading the documentation to build your own queries. If you have any questions, head to the [support section](#support).
+
+<hr class="hr-section-sep">
 
 ### HTTP Request
 
