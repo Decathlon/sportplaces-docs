@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Sport Places API Documentation
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
@@ -9,20 +9,20 @@ toc_footers:
 
 includes:
   - getstarted
-  - geojson
-  - client_applications
   - authentication
-  - errors
   - api/places
   - api/activities
   - api/tags
   - api/sports
   - api/sport_filters
   - api/sport_tags
-  - localization
   - code_samples
-  - contributing
+  - localization
+  - standards
+  - errors
   - roadmap
+  - contributing
+  - support
 
 search: true
 ---

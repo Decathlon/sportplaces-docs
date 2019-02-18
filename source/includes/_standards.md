@@ -1,4 +1,6 @@
-# GeoJSON Format
+# Standards
+
+## GeoJSON Format
 
 ```json
 {
