@@ -20,6 +20,7 @@ includes:
   - localization
   - standards
   - errors
+  - sandboxes
   - roadmap
   - contributing
   - support
