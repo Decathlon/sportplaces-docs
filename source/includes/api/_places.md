@@ -264,13 +264,11 @@ curl
     {
       "sport_id": "160",
       "tags": ["free"],
-      "attributes": {
-        "distance": 10,
-        "difficulty": 2,
-        "duration": 10,
-        "elevation_gain": 0,
-        "cellphone_service": 1
-      }
+      "distance": 10,
+      "difficulty": 2,
+      "duration": 10,
+      "elevation_gain": 0,
+      "cellphone_service": 1
     }
   ],
   "notes": "Lorem Ipsum dolor amet sit..."
@@ -448,10 +446,8 @@ curl
 {
   "tags": ["free"],
   "photo_reference": "1235ygfrt6547u4trgew23rfv[ew455",
-  "attributes": {
-    "difficulty": 2,
-    "distance": 1
-  }
+  "difficulty": 2,
+  "distance": 1
 }
 ```
 This endpoint updates activities of a particular place
