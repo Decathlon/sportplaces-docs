@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Sport Places API Documentation</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -228,30 +228,27 @@
         <ul class="search-results"></ul>
       <div id="toc" class="toc-list-h1">
           <li>
-            <a href="#geojson-format" class="toc-h1 toc-link" data-title="geojson-format">GeoJSON Format</a>
+            <a href="#get-started" class="toc-h1 toc-link" data-title="get-started">Get started</a>
           </li>
           <li>
-            <a href="#client-applications" class="toc-h1 toc-link" data-title="client-applications">Client Applications</a>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="authentication">Authentication</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#creating-an-api-client-application" class="toc-h2 toc-link" data-title="creating-an-api-client-application">Creating an API client application</a>
+                    <a href="#1-create-an-api-client-application" class="toc-h2 toc-link" data-title="1-create-an-api-client-application">1. Create an API client application</a>
                   </li>
                   <li>
-                    <a href="#obtaining-a-jwt" class="toc-h2 toc-link" data-title="obtaining-a-jwt">Obtaining a JWT</a>
+                    <a href="#2-obtain-a-jwt-token" class="toc-h2 toc-link" data-title="2-obtain-a-jwt-token">2. Obtain a JWT Token</a>
+                  </li>
+                  <li>
+                    <a href="#3-using-a-jwt" class="toc-h2 toc-link" data-title="3-using-a-jwt">3. Using a JWT</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="errors">Errors</a>
-          </li>
-          <li>
-            <a href="#places" class="toc-h1 toc-link" data-title="places">Places</a>
+            <a href="#sport-places" class="toc-h1 toc-link" data-title="sport-places">Sport Places</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#search-for-places" class="toc-h2 toc-link" data-title="search-for-places">Search for places</a>
+                    <a href="#concrete-example" class="toc-h2 toc-link" data-title="concrete-example">Concrete example</a>
                   </li>
                   <li>
                     <a href="#retrieving-place-information" class="toc-h2 toc-link" data-title="retrieving-place-information">Retrieving Place Information</a>
@@ -344,31 +341,33 @@
               </ul>
           </li>
           <li>
-            <a href="#localization" class="toc-h1 toc-link" data-title="localization">Localization</a>
-          </li>
-          <li>
             <a href="#code-samples" class="toc-h1 toc-link" data-title="code-samples">Code Samples</a>
           </li>
           <li>
             <a href="#featured-apps" class="toc-h1 toc-link" data-title="featured-apps">Featured apps</a>
           </li>
           <li>
-            <a href="#contributing" class="toc-h1 toc-link" data-title="contributing">Contributing</a>
+            <a href="#localization" class="toc-h1 toc-link" data-title="localization">Localization</a>
+          </li>
+          <li>
+            <a href="#standards" class="toc-h1 toc-link" data-title="standards">Standards</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#stackoverflow" class="toc-h2 toc-link" data-title="stackoverflow">Stackoverflow</a>
+                    <a href="#geojson-format" class="toc-h2 toc-link" data-title="geojson-format">GeoJSON Format</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="errors">Errors</a>
+          </li>
+          <li>
+            <a href="#sandboxes" class="toc-h1 toc-link" data-title="sandboxes">Sandboxes</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#staging" class="toc-h2 toc-link" data-title="staging">Staging</a>
                   </li>
                   <li>
-                    <a href="#twitter" class="toc-h2 toc-link" data-title="twitter">Twitter</a>
-                  </li>
-                  <li>
-                    <a href="#email" class="toc-h2 toc-link" data-title="email">Email</a>
-                  </li>
-                  <li>
-                    <a href="#documentation-improvements" class="toc-h2 toc-link" data-title="documentation-improvements">Documentation improvements</a>
-                  </li>
-                  <li>
-                    <a href="#become-member-of-the-core-team" class="toc-h2 toc-link" data-title="become-member-of-the-core-team">Become member of the core team</a>
+                    <a href="#development-bleeding-edge" class="toc-h2 toc-link" data-title="development-bleeding-edge">Development (Bleeding-edge)</a>
                   </li>
               </ul>
           </li>
@@ -388,6 +387,20 @@
                     <a href="#1-0-april-2018" class="toc-h2 toc-link" data-title="1-0-april-2018">1.0 - April 2018</a>
                   </li>
               </ul>
+          </li>
+          <li>
+            <a href="#contributing" class="toc-h1 toc-link" data-title="contributing">Contributing</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#twitter" class="toc-h2 toc-link" data-title="twitter">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#documentation-improvements" class="toc-h2 toc-link" data-title="documentation-improvements">Documentation improvements</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#support" class="toc-h1 toc-link" data-title="support">Support</a>
           </li>
       </div>
         <ul class="toc-footer">
@@ -411,52 +424,46 @@
         <div class="intro">
           <h1>Introduction</h1>
 
-          <p>The Decathlon Sport Places API can be used by any developer worldwide to obtain details of geographic locations where 
-          certain sports can be played. This data is primarily sourced from Decathlon's global network of sport experts.</p>
-
-          <p>An API key is only required when modifying data - something we plan to restrict to Decathlon employees only. No key is
-          needed to read data.</p>
+          <p>The Decathlon Sport Places API can help you build sport-related applications requiring sport places.</p>
         </div> 
 
-        <h1 id='geojson-format'>GeoJSON Format</h1><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
-    </span><span class="s2">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Point"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"coordinates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="mf">-73.5826985</span><span class="p">,</span><span class="w">
-            </span><span class="mf">45.5119864</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>Data returned by this API is designed to be compliant with the 
-<a href="https://tools.ietf.org/html/rfc7946">GeoJSON Format (RFC 7946)</a></p>
+        <h1 id='get-started'>Get started</h1>
+<p>The Sport Places API can help you build sport-related applications requiring sport places. Here are a few steps to get you started:</p>
 
-<p>Query parameters are also expected to be compliant with this spec, including all <code>POST</code> bodies and query string params.
-Coordinates are represented in <code>[longitude, latitude, elevation]</code> groups. In query strings, these <strong>MUST</strong> be sent as
-comma (<code>,</code>) separated strings consisting only of the <code>longitude</code> and <code>latitude</code> elements.</p>
+<p><strong>1. Sign up as an API User to receive important communications (mandatory).</strong></p>
 
-<p>Example: <code>&amp;origin=-73.5826985,45.5119864</code></p>
+<p>To keep our API Users happy, we will want to make sure we can inform about amazing upgrades or important changes.</p>
 
-<aside class="warning">
-  GeoJSON specification has the longitude and latitude components of locations reversed compared to most other
-  geographical data formats. If you're getting strange API results, or your query is resulting in a 422 error, it is
-  likely that you've got the order wrong.
+<p>Sign up by filling this form: <a href="http://eepurl.com/ggGaRP">http://eepurl.com/ggGaRP</a></p>
+
+<p><strong>2. Learn how authenticate.</strong></p>
+
+<p>To get a <code>client_id</code> and <code>JWT Tokens</code>, go to <a href="#authentication">Authentication</a></p>
+
+<p><strong>3. Make your first API Call!</strong></p>
+
+<p>You are ready to go! We suggest you make your first API Call calling the sport places around you. Let&#39;s start with <a href="#sport-places">Sport Places</a>.  </p>
+
+<aside class="notice">
+If you want to have greater access to our API you must be part of our partners program, 
+please email <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a> to learn more. 
 </aside>
 <p><hr class="hr-section-sep"></p>
-<h1 id='client-applications'>Client Applications</h1><h2 id='creating-an-api-client-application'>Creating an API client application</h2><pre class="highlight shell tab-shell"><code>curl --request POST <span class="se">\</span>
-  --url <span class="s1">'https://decathlon.auth0.com/oidc/register'</span> <span class="se">\</span>
+<h1 id='authentication'>Authentication</h1><h2 id='1-create-an-api-client-application'>1. Create an API client application</h2><pre class="highlight shell tab-shell"><code>curl --request POST <span class="se">\</span>
+  --url <span class="s1">'https://sportplaces.api.decathlon.com/api/v1/clients'</span> <span class="se">\</span>
   --header <span class="s1">'content-type: application/json'</span> <span class="se">\</span>
-  --data <span class="s1">'{"client_name":"My Dynamic Client","redirect_uris": ["https://client.example.com/callback"]}'</span>
+  --data <span class="s1">'{"client_name":"My Client Application","redirect_uris": ["https://client.example.com/callback"]}'</span>
 </code></pre>
 <p>A JWT token is required for all <code>POST</code>, <code>PUT/PATCH</code>, and <code>DELETE</code> requests. 
-Currently we use Auth0 to issue JWTs for third-party developers, and Decathlon Connect for internal apps.</p>
+Currently we use Auth0 to issue JWTs for third-party developers, and <a href="https://developers.decathlon.com/products">Decathlon Login</a> if you are part of Decathlon partner program.</p>
 
-<p>All third-party developers must obtain an application <code>client_id</code> and <code>client_secret</code> from Auth0. Currently we do not
-have a dashboard to allow you to do this, so you must use their API directly. Do not lose your client credentials once
-they are issued, so you will have no way to obtain them again.</p>
-<h2 id='obtaining-a-jwt'>Obtaining a JWT</h2><pre class="highlight plaintext"><code>https://decathlon.auth0.com/authorize?
+<p>All third-party developers must obtain an application <code>client_id</code> and <code>client_secret</code> issued by Auth0 via our dedicated API endpoint. 
+You <strong>MUST</strong> set your name correctly, as there is currently no way to alter it after creation.</p>
+
+<aside class="warning">
+    We are working on building a console to help you track your credentials. In the meantime, do not lose your client credentials once they are issued.
+</aside>
+<h2 id='2-obtain-a-jwt-token'>2. Obtain a JWT Token</h2><pre class="highlight plaintext"><code>https://decathlon.auth0.com/authorize?
   audience=sportplaces-api.herokuapp.com&amp;
   scope=openid%20profile%20email&amp;
   response_type=id_token&amp;
@@ -480,50 +487,16 @@ for more information about these params.</p>
 
 <p>Once the user has completed their login, they will be redirected back to your application with a JWT in the hash
 fragment of the URI.</p>
-<p><hr class="hr-section-sep"></p>
-<h1 id='authentication'>Authentication</h1><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sportplaces.api.decathlon.com/api/v1/places"</span>
+<h2 id='3-using-a-jwt'>3. Using a JWT</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sportplaces.api.decathlon.com/api/v1/places"</span>
   -H <span class="s2">"Authorization: Bearer XXXXXX"</span>
 </code></pre>
-<p><strong><code>GET</code> requests do not require authentication.</strong></p>
+<p><strong><code>GET</code> requests do not require authentication</strong></p>
 
-<p>A JWT token is required for all <code>POST</code>, <code>PUT/PATCH</code>, and <code>DELETE</code> requests. 
-To obtain a token please refer to the <strong>Decathlon Connect API</strong></p>
-
-<p>You must authenticate your requests with an API token in the header.
-E.g.: <code>Authorization: Bearer XXXXXXXXXX</code></p>
+<p>You must authenticate all <code>POST</code>, <code>PUT/PATCH</code>, and <code>DELETE</code> requests with a JWT in the Authorization header.</p>
 <p><hr class="hr-section-sep"></p>
-<h1 id='errors'>Errors</h1>
-<p>The Sport Places API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid - check the JSON format of your request.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized -- Your token is invalid or expired.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found -- The specified place or activity wasn&#39;t found.</td>
-</tr>
-<tr>
-<td>422</td>
-<td>Unprocessable Entity -- There was a validation error with your request.</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-</tbody></table>
-<p><hr class="hr-section-sep"></p>
-<h1 id='places'>Places</h1><h2 id='search-for-places'>Search for places</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&amp;radius=99&amp;sports=175"</span>
+<h1 id='sport-places'>Sport Places</h1>
+<p>This endpoint retrieves all the sport places meeting specific criterias. </p>
+<h2 id='concrete-example'>Concrete example</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&amp;radius=99&amp;sports=175"</span>
 </code></pre>
 <blockquote>
 <p>JSON response:</p>
@@ -579,8 +552,40 @@ E.g.: <code>Authorization: Bearer XXXXXXXXXX</code></p>
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 
-</span></code></pre>
-<p>This endpoint retrieves all places meeting specific criteria.</p>
+</span></code></pre><h3 id='return-all-ice-hockey-sport-places-within-99km-around-mcgill-university-in-montreal-canada'>Return all ice hockey sport places within 99km around McGill University in Montréal, Canada.</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>sports</td>
+<td>175</td>
+<td>175 is the <strong>sport id</strong> for <strong>ice hockey</strong> as per our <a href="https://developers.decathlon.com/sports">Sports API</a></td>
+</tr>
+<tr>
+<td>origin</td>
+<td>-73.582,45.511</td>
+<td>longitude,latitude of your location</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>99</td>
+<td>99km around my latitude and longtitude</td>
+</tr>
+</tbody></table>
+
+<p>Go ahead and copy and paste this request in your browser to test it.</p>
+
+<p><code>https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&amp;radius=99&amp;sports=175</code></p>
+
+<p>Works? Great! </p>
+
+<p>Keep reading the documentation to build your own queries. If you have any questions, head to the <a href="#support">support section</a>.</p>
+
+<p><hr class="hr-section-sep"></p>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET https://sportplaces.api.decathlon.com/api/v1/places</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
@@ -829,7 +834,7 @@ places in a specific geolocation.</p>
   https://sportplaces.api.decathlon.com/api/v1/places
 </code></pre>
 <blockquote>
-<p>JSON request [@data.json]</p>
+<p>Using a Google Place ID</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"google_place_id"</span><span class="p">:</span><span class="s2">"ChIJm7QDm0Y36IkRbbD20K2fC24"</span><span class="p">,</span><span class="w">
@@ -843,16 +848,36 @@ places in a specific geolocation.</p>
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"sport_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"160"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"free"</span><span class="p">],</span><span class="w">
-      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"distance"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"elevation_gain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cellphone_service"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-      </span><span class="p">}</span><span class="w">
+      </span><span class="s2">"distance"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"elevation_gain"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cellphone_service"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem Ipsum dolor amet sit..."</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Using GeoJSON geometry</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example Path"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CA"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"activities"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"sport_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"175"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"free"</span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem Ipsum dolor amet sit"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Linestring"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"coordinates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">[</span><span class="mf">-73.5826985</span><span class="p">,</span><span class="w"> </span><span class="mf">45.5119864</span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="mf">-73.581</span><span class="p">,</span><span class="w"> </span><span class="mf">45.512</span><span class="p">]</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <p>This endpoint creates places based on a Google Place ID and an Activity (Sport
@@ -863,10 +888,65 @@ All places added via the Sport Places API go through moderation by someone from 
 </aside>
 <h3 id='http-request-3'>HTTP Request</h3>
 <p><code>POST https://sportplaces.api.decathlon.com/api/v1/places</code></p>
-<h3 id='request-parameters'>Request Parameters</h3>
+<h3 id='request-parameters-using-a-google-place-id'>Request Parameters (using a Google Place ID)</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>google_place_id</td>
+<td><code>ChIJm7QDm0Y36IkRbbD20K2fC24</code></td>
+<td>A Google Place ID</td>
+</tr>
+<tr>
+<td>activities</td>
+<td>See below</td>
+<td>A list of sporting activities to add to this place</td>
+</tr>
+<tr>
+<td>notes</td>
+<td><code>Any text you like</code></td>
+<td>Optional freeform text notes to add to a place</td>
+</tr>
+</tbody></table>
+
 <p><code>Google Place ID</code> and the <code>activities</code> array are mandatory.
-Within the Activities array are hashes that represent each activity and its
-filters</p>
+Within the Activities array are hashes that represent each activity and its filters</p>
+<h3 id='request-parameters-using-geometry-and-name-data'>Request Parameters (using geometry and name data)</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>geometry</td>
+<td>GeoJSON geometry feature</td>
+<td>A GeoJSON formatted geometry feature, either a <code>Point</code>, <code>Linestring</code>, or <code>Polygon</code></td>
+</tr>
+<tr>
+<td>activities</td>
+<td>See below</td>
+<td>A list of sporting activities to add to this place</td>
+</tr>
+<tr>
+<td>country</td>
+<td><code>CA</code></td>
+<td>Two letter ISO country code</td>
+</tr>
+<tr>
+<td>notes</td>
+<td><code>Any text you like</code></td>
+<td>Optional freeform text notes to add to a place</td>
+</tr>
+</tbody></table>
+
+<p><code>geometry</code>, <code>name</code>, <code>country</code>, and the <code>activities</code> array are mandatory.
+Within the Activities array are hashes that represent each activity and its filters</p>
 <h3 id='activity-properties'>Activity Properties</h3>
 <p>Required properties: </p>
 
@@ -929,7 +1009,7 @@ non-destructive method, however. Activities are not reset upon each request.
 </blockquote>
 <h3 id='http-request-4'>HTTP Request</h3>
 <p><code>POST https://sportplaces.api.decathlon.com/api/v1/places/:place_id</code></p>
-<h3 id='request-parameters-2'>Request Parameters</h3>
+<h3 id='request-parameters'>Request Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1071,16 +1151,14 @@ non-destructive method, however. Activities are not reset upon each request.
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"free"</span><span class="p">],</span><span class="w">
   </span><span class="s2">"photo_reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1235ygfrt6547u4trgew23rfv[ew455"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"distance"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+  </span><span class="s2">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"distance"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <p>This endpoint updates activities of a particular place</p>
 <h3 id='http-request-5'>HTTP Request</h3>
 <p><code>POST https://sportplaces.api.decathlon.com/api/v1/places/:place_id/activities/:activity_id</code></p>
-<h3 id='request-parameters-3'>Request Parameters</h3>
+<h3 id='request-parameters-2'>Request Parameters</h3>
 <p>All activity parameters are accepted, with exception of <code>sport_id</code> and <code>user</code>
 which are immutable.</p>
 
@@ -1160,7 +1238,7 @@ which are immutable.</p>
 </span><span class="p">}</span><span class="w">
 </span></code></pre><h3 id='http-request-6'>HTTP Request</h3>
 <p><code>GET https://sportplaces.api.decathlon.com/api/v1/places/pending</code></p>
-<h3 id='request-parameters-4'>Request Parameters</h3>
+<h3 id='request-parameters-3'>Request Parameters</h3>
 <p>This GET request accepts no parameters.</p>
 
 <blockquote>
@@ -1347,6 +1425,14 @@ activity ID.</p>
     </span><span class="err">...</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+<aside class="warning">
+  This endpoint will be deprecated in the next version of the Sport Places
+  API, in favour of the <a href="https://developers.decathlon.com/sports">Sports
+  API</a>
+<br/>
+  * Note the HTTP Header <strong>X-Deprecation-Warning</strong> on the response.
+</aside>
+
 <p>Retrieves a list of all supported Decathlon sports (as defined by Decathlon), plus the allowed tags and filters for
 each.</p>
 
@@ -1503,6 +1589,10 @@ activities to a place.</p>
 <br/></p>
 <h3 id='http-request-3'>HTTP Request</h3>
 <p><code>DELETE https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/tags/TAG_SLUG</code></p>
+<h1 id='code-samples'>Code Samples</h1>
+<p><a href="https://github.com/Decathlon/badmintoncommunity">Basic Javascript App displaying Badminton facilities</a></p>
+<h1 id='featured-apps'>Featured apps</h1>
+<p><a href="http://community.decathlon.ca">community.decathlon.ca</a></p>
 <h1 id='localization'>Localization</h1><pre class="highlight shell tab-shell"><code>curl 
   -X PUT
   -H <span class="s2">"Accept-Language:fr-CA"</span>
@@ -1542,24 +1632,83 @@ latter with just the example request object on the right.</p>
 we&#39;ll add it to the list.</p>
 
 <p>At this moment the only supported column is <code>notes</code> for a place. We plan on localizing more data to cater to our users needs.</p>
-<h1 id='code-samples'>Code Samples</h1>
-<p><a href="https://github.com/Decathlon/badmintoncommunity">Basic Javascript App displaying Badminton facilities</a></p>
-<h1 id='featured-apps'>Featured apps</h1>
-<p><a href="http://community.decathlon.ca">community.decathlon.ca</a></p>
-<h1 id='contributing'>Contributing</h1>
-<p><strong>Everyone</strong> is encouraged to help improve this project.</p>
+<h1 id='standards'>Standards</h1><h2 id='geojson-format'>GeoJSON Format</h2><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feature"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+    </span><span class="s2">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Point"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"coordinates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="mf">-73.5826985</span><span class="p">,</span><span class="w">
+            </span><span class="mf">45.5119864</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Data returned by this API is designed to be compliant with the 
+<a href="https://tools.ietf.org/html/rfc7946">GeoJSON Format (RFC 7946)</a></p>
 
-<p>We&#39;re open to feature requests, doc improvements, big ideas, suggestions and new implementations. We may reward the best contributors with sport-related stuff ;) </p>
-<h2 id='stackoverflow'>Stackoverflow</h2>
-<p>We encourage use to leverage the <a href="#sport-places-api">https://stackoverflow.com/questions/tagged/sport-places-api</a> tag on StackOverflow.</p>
-<h2 id='twitter'>Twitter</h2>
-<p>Tweet us at <a href="@decathlondev">https://twitter.com/decathlondev</a></p>
-<h2 id='email'>Email</h2>
-<p>For all other requests, suggestions, bug reports and feature requests please feel free to email us at <a href="sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a></p>
-<h2 id='documentation-improvements'>Documentation improvements</h2>
-<p>Help us improve the documentation <a href="here">https://github.com/Decathlon/sportplaces-docs</a></p>
-<h2 id='become-member-of-the-core-team'>Become member of the core team</h2>
-<p>To join Jack Hayter and Caio Bianchi as a core member. Please email us and we will talk git clone ;) </p>
+<p>Query parameters are also expected to be compliant with this spec, including all <code>POST</code> bodies and query string params.
+Coordinates are represented in <code>[longitude, latitude, elevation]</code> groups. In query strings, these <strong>MUST</strong> be sent as
+comma (<code>,</code>) separated strings consisting only of the <code>longitude</code> and <code>latitude</code> elements.</p>
+
+<p>Example: <code>&amp;origin=-73.5826985,45.5119864</code></p>
+
+<aside class="warning">
+  GeoJSON specification has the longitude and latitude components of locations reversed compared to most other
+  geographical data formats. If you're getting strange API results, or your query is resulting in a 422 error, it is
+  likely that you've got the order wrong.
+</aside>
+<p><hr class="hr-section-sep"></p>
+<h1 id='errors'>Errors</h1>
+<p>The Sport Places API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Your request is invalid - check the JSON format of your request.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized -- Your token is invalid or expired.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- The specified place or activity wasn&#39;t found.</td>
+</tr>
+<tr>
+<td>422</td>
+<td>Unprocessable Entity -- There was a validation error with your request.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+</tr>
+</tbody></table>
+<h1 id='sandboxes'>Sandboxes</h1>
+<p>If you&#39;re looking for places to play around with these API calls and/or just run
+tests against your application, you might want to try our sandbox environments:</p>
+<h2 id='staging'>Staging</h2>
+<p>URL: <a href="https://sportplaces-api-staging.herokuapp.com">https://sportplaces-api-staging.herokuapp.com</a></p>
+
+<p>This environment is a replica of our production environment, with a
+representative dataset and fully functional API endpoints</p>
+<h2 id='development-bleeding-edge'>Development (Bleeding-edge)</h2>
+<p>URL: <a href="https://sportplaces-develop.herokuapp.com">https://sportplaces-develop.herokuapp.com</a></p>
+
+<p>This environment is NOT recommended for production. This contains the latest
+additions to our API and some of them might not yet be ready for usage. Even
+though most of what&#39;s here is soon to be deployed, we cannot guarantee it will
+continue to work as features are still being tested/developed.</p>
+
+<aside class="warning">
+  In case you have specific needs for a new environment, get in touch with us at
+  <a href="mailto:developers@decathlon.com">developers@decathlon.com</a>
+</aside>
 <p><hr class="hr-section-sep"></p>
 <h1 id='roadmap'>Roadmap</h1><h2 id='1-3-planned-q1-2019'>1.3 - Planned Q1 2019</h2>
 <ul>
@@ -1597,6 +1746,16 @@ we&#39;ll add it to the list.</p>
 <li>Places crowdsourcing</li>
 <li>Decathlon Connect Authentication</li>
 </ul>
+<h1 id='contributing'>Contributing</h1>
+<p><strong>Everyone</strong> is encouraged to help improve this project.</p>
+
+<p>We&#39;re open to feature requests, doc improvements, big ideas, suggestions and new implementations. We may reward the best contributors with sport-related stuff ;) </p>
+<h3 id='twitter'>Twitter</h3>
+<p>Tweet us at <a href="@decathlondev">https://twitter.com/decathlondev</a></p>
+<h3 id='documentation-improvements'>Documentation improvements</h3>
+<p>Help us improve the documentation <a href="here">https://github.com/Decathlon/sportplaces-docs</a></p>
+<h1 id='support'>Support</h1>
+<p>For all suggestions, bug reports and feature requests please feel free to email us at <a href="sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a></p>
 
       </div>
       <div class="dark-box">
