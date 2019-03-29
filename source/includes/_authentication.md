@@ -5,23 +5,16 @@
 
 ```shell
 curl --request POST \
-  --url 'https://decathlon.auth0.com/oidc/register' \
+  --url 'https://sportplaces.api.decathlon.com/api/v1/clients' \
   --header 'content-type: application/json' \
-  --data '{"client_name":"My Dynamic Client","redirect_uris": ["https://client.example.com/callback"]}'
+  --data '{"client_name":"My Client Application","redirect_uris": ["https://client.example.com/callback"]}'
 ```
 
 A JWT token is required for all `POST`, `PUT/PATCH`, and `DELETE` requests. 
 Currently we use Auth0 to issue JWTs for third-party developers, and [Decathlon Login](https://developers.decathlon.com/products) if you are part of Decathlon partner program.
 
-All third-party developers must obtain an application `client_id` and `client_secret` from Auth0. 
-
-```shell
-curl "https://sportplaces.api.decathlon.com/api/v1/places"
-  -H "Authorization: Bearer XXXXXX"
-```
-
-You must authenticate your requests with an API token in the header.
-E.g.: `Authorization: Bearer XXXXXXXXXX`
+All third-party developers must obtain an application `client_id` and `client_secret` issued by Auth0 via our dedicated API endpoint. 
+You **MUST** set your name correctly, as there is currently no way to alter it after creation.
 
 <aside class="warning">
 	We are working on building a console to help you track your credentials. In the meantime, do not lose your client credentials once they are issued.
@@ -53,3 +46,14 @@ for more information about these params.
 
 Once the user has completed their login, they will be redirected back to your application with a JWT in the hash
 fragment of the URI.
+
+## 3. Using a JWT
+
+```shell
+curl "https://sportplaces.api.decathlon.com/api/v1/places"
+  -H "Authorization: Bearer XXXXXX"
+```
+
+**`GET` requests do not require authentication**
+
+You must authenticate all `POST`, `PUT/PATCH`, and `DELETE` requests with a JWT in the Authorization header.

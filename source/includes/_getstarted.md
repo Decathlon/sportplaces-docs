@@ -17,5 +17,6 @@ To get a `client_id` and `JWT Tokens`, go to [Authentication](#authentication)
 You are ready to go! We suggest you make your first API Call calling the sport places around you. Let's start with [Sport Places](#sport-places).  
 
 <aside class="notice">
-If you want to have greater access to our API you must be part of our partners program, please email [sportplacesapi@decathlon.com](mailto:sportplacesapi@decathlon.com) to learn more. 
+If you want to have greater access to our API you must be part of our partners program, 
+please email <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a> to learn more. 
 </aside>

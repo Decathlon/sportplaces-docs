@@ -249,7 +249,7 @@ curl
   https://sportplaces.api.decathlon.com/api/v1/places
 ```
 
-> JSON request [@data.json]
+> Using a Google Place ID
 
 ```json
 {
@@ -275,6 +275,29 @@ curl
 }
 ```
 
+> Using GeoJSON geometry
+
+```json
+{
+	"name": "Example Path",
+	"country": "CA",
+	"activities": [
+    {
+      "sport_id": "175",
+      "tags": ["free"]
+    }
+  ],
+	"notes": "Lorem Ipsum dolor amet sit",
+	"geometry": {
+		"type": "Linestring",
+		"coordinates": [
+			[-73.5826985, 45.5119864],
+			[-73.581, 45.512]
+		]
+	}
+}
+```
+
 This endpoint creates places based on a Google Place ID and an Activity (Sport
 ID)
 
@@ -286,11 +309,28 @@ All places added via the Sport Places API go through moderation by someone from 
 
 `POST https://sportplaces.api.decathlon.com/api/v1/places`
 
-### Request Parameters
+### Request Parameters (using a Google Place ID)
+
+Parameter             | Value                          | Description
+---------             | -------                        | -----------
+google_place_id       | `ChIJm7QDm0Y36IkRbbD20K2fC24`  | A Google Place ID
+activities            | See below                      | A list of sporting activities to add to this place
+notes                 | `Any text you like`            | Optional freeform text notes to add to a place
 
 `Google Place ID` and the `activities` array are mandatory.
-Within the Activities array are hashes that represent each activity and its
-filters
+Within the Activities array are hashes that represent each activity and its filters
+
+### Request Parameters (using geometry and name data)
+
+Parameter             | Value                          | Description
+---------             | -------                        | -----------
+geometry              | GeoJSON geometry feature       | A GeoJSON formatted geometry feature, either a `Point`, `Linestring`, or `Polygon`
+activities            | See below                      | A list of sporting activities to add to this place
+country               | `CA`                           | Two letter ISO country code
+notes                 | `Any text you like`            | Optional freeform text notes to add to a place
+
+`geometry`, `name`, `country`, and the `activities` array are mandatory.
+Within the Activities array are hashes that represent each activity and its filters
 
 ### Activity Properties
 
