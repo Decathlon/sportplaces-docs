@@ -139,6 +139,7 @@ limit                 | `10`                      | Number of records to be retu
 created_at            | `desc`                    | Order of results by creation date (asc or desc)
 days                  | `7`                       | Number of days from now from which places have been created
 page                  | `2`                       | Number of pagination of results
+partner               | `amilia`                  | Restrict results to only the specified partner (slug)
 
 
 ## Retrieving Place Information
