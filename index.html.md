@@ -29,7 +29,6 @@ If you want to have greater access to our API you must be part of our partners p
 please email <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a> to learn more. 
 </aside>
 
-<hr class="hr-section-sep">
 # Authentication
 
 ## 1. Create an API client application
@@ -72,8 +71,8 @@ To obtain a JWT, you must redirect your users to a specific URL containing:
 * Your application `state` to prevent CSRF attacks
 
 Please see the
-<a href="https://auth0.com/docs/api-auth/dynamic-client-registration#configure-your-client">Auth0 documentation</a>
-for more information about these params.
+[Auth0 Documentation](https://auth0.com/docs/api-auth/dynamic-client-registration#configure-your-client)
+for more information about these parameters.
 
 Once the user has completed their login, they will be redirected back to your application with a JWT in the hash
 fragment of the URI.
@@ -89,7 +88,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places"
 
 You must authenticate all `POST`, `PUT/PATCH`, and `DELETE` requests with a JWT in the Authorization header.
 
-<hr class="hr-section-sep">
+
 # Sport Places
 
 This endpoint retrieves all the sport places meeting specific criterias. 
@@ -173,8 +172,6 @@ Go ahead and copy and paste this request in your browser to test it.
 Works? Great! 
 
 Keep reading the documentation to build your own queries. If you have any questions, head to the [support section](#support).
-
-<hr class="hr-section-sep">
 
 ### HTTP Request
 
@@ -682,8 +679,6 @@ This GET request accepts no parameters.
 
 Errors will be responded to with specific error information, and an `HTTP 422` status code.
 
-<h2></h2>
-
 
 # Activities
 
@@ -819,17 +814,7 @@ activity ID.
 
 `POST https://sportplaces.api.decathlon.com/v1/places/:place_id/activities/:activity_id/images`
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
-
-<hr class="hr-section-sep">
 # Activity Tags
 
 ## Get a list of tags on an activity
@@ -935,7 +920,6 @@ curl "https://sportplaces.api.decathlon.com/api/v1/sports"
   This endpoint will be deprecated in the next version of the Sport Places
   API, in favour of the <a href="https://developers.decathlon.com/sports">Sports
   API</a>
-<br/>
   * Note the HTTP Header <strong>X-Deprecation-Warning</strong> on the response.
 </aside>
 
@@ -1141,16 +1125,6 @@ curl -X DELETE \
 ```
 
 Removes a specific tag from the allowed list for a given sport.
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 ### HTTP Request
 
@@ -1165,9 +1139,6 @@ Removes a specific tag from the allowed list for a given sport.
 # Featured apps
 
 [community.decathlon.ca](http://community.decathlon.ca)
-
-
-
 
 
 # Localization
@@ -1247,7 +1218,6 @@ Example: `&origin=-73.5826985,45.5119864`
 </aside>
 
 
-<hr class="hr-section-sep">
 # Errors
 
 The Sport Places API uses the following error codes:
@@ -1288,7 +1258,6 @@ continue to work as features are still being tested/developed.
 </aside>
 
 
-<hr class="hr-section-sep">
 # Roadmap
 
 ## 1.3 - Planned Q1 2019
@@ -1331,6 +1300,7 @@ Tweet us at [https://twitter.com/decathlondev](@decathlondev)
 ### Documentation improvements
 
 Help us improve the documentation [https://github.com/Decathlon/sportplaces-docs](here)
+
 
 # Support
 

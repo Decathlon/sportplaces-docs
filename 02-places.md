@@ -1,4 +1,3 @@
-<hr class="hr-section-sep">
 # Sport Places
 
 This endpoint retrieves all the sport places meeting specific criterias. 
@@ -82,8 +81,6 @@ Go ahead and copy and paste this request in your browser to test it.
 Works? Great! 
 
 Keep reading the documentation to build your own queries. If you have any questions, head to the [support section](#support).
-
-<hr class="hr-section-sep">
 
 ### HTTP Request
 
@@ -590,5 +587,3 @@ This GET request accepts no parameters.
 > Errors
 
 Errors will be responded to with specific error information, and an `HTTP 422` status code.
-
-<h2></h2>

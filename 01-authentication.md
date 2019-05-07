@@ -1,4 +1,3 @@
-<hr class="hr-section-sep">
 # Authentication
 
 ## 1. Create an API client application
@@ -41,8 +40,8 @@ To obtain a JWT, you must redirect your users to a specific URL containing:
 * Your application `state` to prevent CSRF attacks
 
 Please see the
-<a href="https://auth0.com/docs/api-auth/dynamic-client-registration#configure-your-client">Auth0 documentation</a>
-for more information about these params.
+[Auth0 Documentation](https://auth0.com/docs/api-auth/dynamic-client-registration#configure-your-client)
+for more information about these parameters.
 
 Once the user has completed their login, they will be redirected back to your application with a JWT in the hash
 fragment of the URI.

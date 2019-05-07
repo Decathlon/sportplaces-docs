@@ -1,4 +1,3 @@
-<hr class="hr-section-sep">
 # Activity Tags
 
 ## Get a list of tags on an activity

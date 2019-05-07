@@ -131,12 +131,3 @@ activity ID.
 ### HTTP Request
 
 `POST https://sportplaces.api.decathlon.com/v1/places/:place_id/activities/:activity_id/images`
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>

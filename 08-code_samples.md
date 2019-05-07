@@ -5,6 +5,3 @@
 # Featured apps
 
 [community.decathlon.ca](http://community.decathlon.ca)
-
-
-

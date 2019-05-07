@@ -1,4 +1,3 @@
-<hr class="hr-section-sep">
 # Roadmap
 
 ## 1.3 - Planned Q1 2019
