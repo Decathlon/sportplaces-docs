@@ -1,7 +1,0 @@
-version: "3.7"
-
-services:
-  sportplaces-docs:
-    build: .
-    ports:
-      - 4567:4567
