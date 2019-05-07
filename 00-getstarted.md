@@ -1,3 +1,5 @@
+<span class="product-title">Sport Places API</span>
+
 # Get started
 
 The Sport Places API can help you build sport-related applications requiring sport places. Here are a few steps to get you started:
