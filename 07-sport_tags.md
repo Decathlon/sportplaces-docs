@@ -56,6 +56,13 @@ Adds a new tag to the allowed list for a specified sport. **MUST** be one of the
 * `club`
 * `space_for_children"`
 
+<aside class="notice">
+If you want new tags that aren't part of the list, please submit them to
+<a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a>.
+
+Ex: washroom_available 
+</aside>
+
 ### HTTP Request
 
 `POST https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/tags`

@@ -6,8 +6,9 @@ We're open to feature requests, doc improvements, big ideas, suggestions and new
 
 ### Twitter
 
-Tweet us at [https://twitter.com/decathlondev](@decathlondev)
+Tweet us at <a href='https://twitter.com/decathlondev' target='_blank'>@decathlondev</a>
 
 ### Documentation improvements
 
-Help us improve the documentation by submitting a PR on [https://github.com/Decathlon/sportplaces-docs](here)
+Help us improve the documentation by submitting a PR on 
+<a href='https://github.com/Decathlon/sportplaces-docs' target='_blank'>here</a>

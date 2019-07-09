@@ -70,7 +70,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&
 
 Parameter             | Value                     | Description
 ---------             | -------                   | -----------
-sports                | 175                       | 175 is the **sport id** for **ice hockey** as per our [Sports API](https://developers.decathlon.com/sports)
+sports                | 175                       | 175 is the **sport id** for **ice hockey** as per our <a href="https://developers.decathlon.com/products/sports">Sports API</a>
 origin                | -73.582,45.511            | longitude,latitude of your location
 radius                | 99                        | 99km around my latitude and longtitude
 

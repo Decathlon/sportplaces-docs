@@ -5,14 +5,14 @@ tests against your application, you might want to try our sandbox environments:
 
 ## Staging
 
-URL: [https://sportplaces-api-staging.herokuapp.com](https://sportplaces-api-staging.herokuapp.com)
+URL: <a href='https://sportplaces-api-staging.herokuapp.com' target='_blank'>https://sportplaces-api-staging.herokuapp.com</a>
 
 This environment is a replica of our production environment, with a
 representative dataset and fully functional API endpoints
 
 ## Development (Bleeding-edge)
 
-URL: [https://sportplaces-develop.herokuapp.com](https://sportplaces-develop.herokuapp.com)
+URL: <a href='https://sportplaces-develop.herokuapp.com' target='_blank'>https://sportplaces-develop.herokuapp.com</a>
 
 This environment is NOT recommended for production. This contains the latest
 additions to our API and some of them might not yet be ready for usage. Even
@@ -21,5 +21,5 @@ continue to work as features are still being tested/developed.
 
 <aside class="warning">
   In case you have specific needs for a new environment, get in touch with us at
-  <a href="mailto:developers@decathlon.com">developers@decathlon.com</a>
+  <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a>
 </aside>

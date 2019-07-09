@@ -17,7 +17,7 @@
 ```
 
 Data returned by this API is designed to be compliant with the 
-[GeoJSON Format (RFC 7946)](https://tools.ietf.org/html/rfc7946)
+<a href="https://tools.ietf.org/html/rfc7946" target="_blank">GeoJSON Format (RFC 7946)</a>
 
 Query parameters are also expected to be compliant with this spec, including all `POST` bodies and query string params.
 Coordinates are represented in `[longitude, latitude, elevation]` groups. In query strings, these **MUST** be sent as

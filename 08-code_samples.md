@@ -1,7 +1,8 @@
 # Code Samples
 
-[Basic Javascript App displaying Badminton facilities](https://github.com/Decathlon/badmintoncommunity)
+- <a href="https://github.com/Decathlon/badmintoncommunity" target="_blank">Basic Javascript App displaying Badminton facilities</a>
 
 # Featured apps
 
-[community.decathlon.ca](http://community.decathlon.ca)
+- <a href="http://community.decathlon.ca" target="_blank">Decathlon Community in Canada</a>
+- <a href="https://www.appysport.com/" target="_blank">AppySport in Hong Kong</a>

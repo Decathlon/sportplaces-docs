@@ -32,10 +32,9 @@ Supported locales at the moment are: `en, en-GB, fr-FR, fr-CA, pt-PT, pt-BR, es-
 
 * Note that default language in our application is English (`en`), any other languages require an `Accept-Language` header.
 
-Locales follow the [ISO
-639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) convention. 
+Locales follow the <a href='https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes' target="_blank"> ISO
+639-1</a> convention. 
 
-If your locale isn't listed, please [get in touch](developers@decathlon.com) and
-we'll add it to the list.
+If your locale isn't listed, please <a href='mailto:sportplacesapi@decathlon.com'> get in touch</a>
 
 At this moment the only supported column is `notes` for a place. We plan on localizing more data to cater to our users needs.
