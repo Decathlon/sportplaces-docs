@@ -68,6 +68,78 @@ in the allowed filters for the sport.
 
 `POST https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID/activities`
 
+## Update an activity
+
+```shell
+curl -X POST \
+  https://sportplaces.api.decathlon.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities/150 \
+  -H 'Authorization: Bearer XXXXXX' \
+  -d '{
+  {
+    "sport_id": 150,
+    "tags": ["free"],
+    "cellphone_service": 1
+  }
+}'
+```
+
+> JSON response:
+
+```json
+{
+    ...
+    "sport_id": 150,
+    "tags": ["free"],
+    "cellphone_service": 1
+    ...
+}
+```
+
+Updates a sporting activity at a place. Posted tags must be in the allowed list for the sport, and all properties should be
+in the allowed filters for the sport. The activity must already exist at the location, else a 404 will be returned.
+
+### HTTP Request
+
+`PUT https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID/activities/150`
+
+## Update multiple activities
+
+```shell
+curl -X POST \
+  https://sportplaces.api.decathlon.com/api/v1/places/9249f4b3-aff8-4e5c-8e76-9c79f4cf7bf3/activities \
+  -H 'Authorization: Bearer XXXXXX' \
+  -d '{
+    "activities": [
+      {
+        "sport_id": 150,
+        "tags": ["free"],
+        "cellphone_service": 1
+      }
+    ]
+}'
+```
+
+> JSON response:
+
+```json
+{
+    [
+        ...
+        "sport_id": 150,
+        "tags": ["free"],
+        "cellphone_service": 1
+        ...
+    ]
+}
+```
+
+Updates multiple sporting activities at a place. Posted tags must be in the allowed list for the sport, and all properties should be
+in the allowed filters for the sport. If the activities do not exist, they will be created.
+
+### HTTP Request
+
+`PUT https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID/activities`
+
 ## Remove an activity from a place
 
 ```shell
