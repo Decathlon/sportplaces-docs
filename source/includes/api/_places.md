@@ -346,7 +346,7 @@ This endpoint updates places parameters.
 
 ### HTTP Request
 
-`POST https://sportplaces.api.decathlon.com/api/v1/places/:place_id`
+`PUT https://sportplaces.api.decathlon.com/api/v1/places/:place_id`
 
 ### Request Parameters
 
