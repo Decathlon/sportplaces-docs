@@ -10,4 +10,4 @@ Tweet us at [https://twitter.com/decathlondev](@decathlondev)
 
 ### Documentation improvements
 
-Help us improve the documentation [https://github.com/Decathlon/sportplaces-docs](here)
+Help us improve the documentation by submitting a PR on [https://github.com/Decathlon/sportplaces-docs](here)
