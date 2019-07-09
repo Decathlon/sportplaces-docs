@@ -1,7 +1,23 @@
 <hr class="hr-section-sep">
 # Roadmap
 
-## 1.3 - Planned Q1 2019
+## June 2019
+  * Auto-approval of sport place additions by partners and ambassadors
+  * Ability to mark a place as favorited
+
+# Q3 2019
+  * Facilitating data imports from multiple sources
+  * Javascript public widget to display sport places
+  * Ability to store place slug and search by slug
+  * Be able to add several activities in one shot 
+
+# Q4 2019
+  * Implement Sport Places User Reviews\
+  * Multi-region deployment to improve quality of service
+
+# Changelog
+
+## 1.3 - Q1 2019
   * Eliminate dependency on `google_place_id` and Google Geolocation in general
   * Use AI to better tailor recommendations based on arbitrary properties.
       * Likely models will be: mood-based, weather-based, proximity, user
