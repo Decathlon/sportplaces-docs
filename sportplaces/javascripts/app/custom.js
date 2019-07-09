@@ -1,1 +1,0 @@
-$(document).ready(function(){var o=$(".intro");$(".down-arrow").click(function(){var n=$(this).position().top,t=o.scrollTop();$("html, body").animate({scrollTop:t+n},300)})});
