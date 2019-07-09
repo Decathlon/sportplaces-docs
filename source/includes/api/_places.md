@@ -301,7 +301,7 @@ Required properties:
 Parameter | Example               | Description
 --------- | -------               | -----------
 sport_id  | `175`                 | Reference to the Sport this activity belongs to.
-tags      | `['free', 'lessons']` | (optional) Array of tags(strings). If they don't already exist, it will be automatically created.
+tags      | `['equipment_rental', 'lessons']` | (optional) Array of tags(strings). See [Sport Tags](#sport_tags) for more info.
 
 Filters are not required by default, but are highly recommended for a better
 user experience.
