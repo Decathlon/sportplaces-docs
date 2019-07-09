@@ -46,6 +46,10 @@ for more information about these parameters.
 Once the user has completed their login, they will be redirected back to your application with a JWT in the hash
 fragment of the URI.
 
+<aside class="warning">
+For security reasons, please note the JWT Token is only valid for 15 minutes. You will need to refresh it regularly. 
+</aside>
+
 ## 3. Using a JWT
 
 ```shell
