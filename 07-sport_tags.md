@@ -1,5 +1,63 @@
 # Sport Tags
 
+## Introduction
+
+A tag is associated to a sport place's activity and answer a YES/NO question. 
+
+_Ex: Does this place offers swimming lessons?_ 
+
+becomes:
+
+Does this place has the `swimming` **activity** with the `lessons` **tag**?
+
+See the [activity tags](#activity-tags) section for a concrete example.
+
+## List of available tags
+
+Each tag has to be linked to a sport before being associated to a sport place's activity. Here's the full list of available tags.
+
+* `catering`
+* `changing_room`
+* `club`
+* `court_adjacent_to_others`
+* `equipment_rental`
+* `flat`
+* `floodlight`
+* `free`
+* `free_parking`
+* `grocery_store`
+* `hourly_chargeable`
+* `indoor`
+* `isolated_court`
+* `kids-pool`
+* `lessons`
+* `lifeguard`
+* `members_only`
+* `open-swim`
+* `open-water`
+* `outdoor`
+* `paid_parking`
+* `practice_wall`
+* `security`
+* `shower`
+* `space_for_children`
+* `speed`
+* `suitable_for_beginners`
+* `toilets`
+* `washing_equipment`
+* `water_fountain`
+* `wave`
+* `wheelchair_accessible`
+
+The full list by sport is also available <a href="https://app.periscopedata.com/shared/92a812b0-d876-4dde-8d4a-b4b5b0a1f157?" target="_blank">through this dashboard</a>.
+
+<aside class="notice">
+If you want new tags that aren't part of the list, please submit them to
+<a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a>.
+
+Ex: washroom_available 
+</aside>
+
 ## Get a list of allowed tags for a sport
 
 ```shell
@@ -10,21 +68,26 @@ curl "https://sportplaces.api.decathlon.com/api/v1/sports/186/tags"
 
 ```json
 [
-    "free",
-    "outdoor",
-    "lessons",
-    "space_for_children"
+  "free",
+  "equipment_rental",
+  "lessons",
+  "outdoor",
+  "space_for_children",
+  "lifeguard",
+  "beach",
+  "indoor"
 ]
 ```
 
-Retrieves a list of allowed tag names for a particular sport. Use these when performing Place queries, or adding
-activities to a place.
+Retrieves a list of allowed tag names for a particular sport.
 
 ### HTTP Request
 
 `GET https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/tags`
 
 ## Allow a tag for a sport
+
+Not all tags are relevant to all sports. If you want a tag added to a specific sport, you can add it yourself by following the instructions below:
 
 ```shell
 curl -X POST \
@@ -45,47 +108,8 @@ curl -X POST \
 ]
 ```
 
-Adds a new tag to the allowed list for a specified sport. **MUST** be one of the following:
-
-* `beach`
-* `equipment_rental`
-* `free`
-* `grocery_store`
-* `lessons`
-* `outdoor`
-* `club`
-* `space_for_children"`
-
-<aside class="notice">
-If you want new tags that aren't part of the list, please submit them to
-<a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a>.
-
-Ex: washroom_available 
-</aside>
-
 ### HTTP Request
 
 `POST https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/tags`
 
-## Remove a tag from a sport
-
-```shell
-curl -X DELETE \
-  https://sportplaces.api.decathlon.com/api/v1/sports/186/tags/grocery_store \
-  -H 'Authorization: Bearer XXXXXX' \
-```
-
-> JSON response:
-
-```json
-{
-    "message": "Deleted"
-}
-```
-
-Removes a specific tag from the allowed list for a given sport.
-
-### HTTP Request
-
-`DELETE https://sportplaces.api.decathlon.com/api/v1/sports/SPORT_ID/tags/TAG_SLUG`
-
+The tag needs to be part of the [list of available tags](#sport-tags) above.
