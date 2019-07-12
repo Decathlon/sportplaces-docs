@@ -2,11 +2,7 @@
 
 ## Introduction
 
-<<<<<<< HEAD
 A tag is associated with a sport place's activity and answers a YES/NO question. 
-=======
-A tag is associated with a sport place activity and answers a YES/NO question. 
->>>>>>> 6946f91206407b3e47801edfb65c8902215dda7e
 
 _Ex: Does this place offer swimming lessons?_ 
 
@@ -18,11 +14,7 @@ See the [activity tags](#activity-tags) section for a concrete example.
 
 ## List of available tags
 
-<<<<<<< HEAD
 Each tag has to be linked to a sport before being associated with an activity. Here's the full list of available tags.
-=======
-Each tag has to be linked to a sport before being associated with a sport place activity. Here's the full list of available tags.
->>>>>>> 6946f91206407b3e47801edfb65c8902215dda7e
 
 * `catering`
 * `changing_room`
