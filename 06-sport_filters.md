@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A filter is associated with a sport place's activity. As opposed to tags that are boolean, their value ranges either as a numerical value or an array of values. 
+A filter is associated with a sport place's activity. As opposed to tags which are boolean, their value must be either numerical, or one of the pre-defined string values.
 
 _Ex: How long is this kayaking track?_ becomes _What is the value of the `distance` **filter**?_
 
