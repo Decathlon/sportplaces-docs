@@ -2,19 +2,19 @@
 
 ## Introduction
 
-A tag is associated to a sport place's activity and answer a YES/NO question. 
+A tag is associated with a sport place's activity and answers a YES/NO question. 
 
 _Ex: Does this place offers swimming lessons?_ 
 
 becomes:
 
-Does this place has the `swimming` **activity** with the `lessons` **tag**?
+Does this place have the `swimming` **activity** with the `lessons` **tag**?
 
 See the [activity tags](#activity-tags) section for a concrete example.
 
 ## List of available tags
 
-Each tag has to be linked to a sport before being associated to a sport place's activity. Here's the full list of available tags.
+Each tag has to be linked to a sport before being associated with an activity. Here's the full list of available tags.
 
 * `catering`
 * `changing_room`
