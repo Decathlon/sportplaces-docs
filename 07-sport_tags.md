@@ -4,7 +4,7 @@
 
 A tag is associated with a sport place's activity and answers a YES/NO question. 
 
-_Ex: Does this place offers swimming lessons?_ 
+_Ex: Does this place offer swimming lessons?_ 
 
 becomes:
 
@@ -49,13 +49,13 @@ Each tag has to be linked to a sport before being associated with an activity. H
 * `wave`
 * `wheelchair_accessible`
 
-The full list by sport is also available <a href="https://app.periscopedata.com/shared/92a812b0-d876-4dde-8d4a-b4b5b0a1f157?" target="_blank">through this dashboard</a>.
+The full list of sports is also available <a href="https://app.periscopedata.com/shared/92a812b0-d876-4dde-8d4a-b4b5b0a1f157?" target="_blank">on this dashboard</a>.
 
 <aside class="notice">
 If you want new tags that aren't part of the list, please submit them to
 <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a>.
 
-Ex: washroom_available 
+Ex: `washroom_available` 
 </aside>
 
 ## Get a list of allowed tags for a sport
