@@ -98,6 +98,7 @@ curl -X POST \
 Updates a sporting activity at a place. Posted tags must be in the allowed list for the sport, and all properties should be
 in the allowed filters for the sport. The activity must already exist at the location, else a 404 will be returned.
 
+
 ### HTTP Request
 
 `PUT https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID/activities/150`
@@ -114,6 +115,11 @@ curl -X POST \
         "sport_id": 150,
         "tags": ["free"],
         "cellphone_service": 1
+      },
+      {
+        "sport_id": 175,
+        "tags": ["lessons", "free"],
+        "surface": "ice"
       }
     ]
 }'
@@ -122,15 +128,22 @@ curl -X POST \
 > JSON response:
 
 ```json
-{
-    [
+[
+    {
         ...
         "sport_id": 150,
         "tags": ["free"],
         "cellphone_service": 1
         ...
-    ]
-}
+    },
+    {
+        ...
+        "sport_id": 175,
+        "tags": ["lessons", "free"],
+        "surface": "ice"
+        ...
+    },
+]
 ```
 
 Updates multiple sporting activities at a place. Posted tags must be in the allowed list for the sport, and all properties should be
@@ -187,7 +200,7 @@ curl -X POST \
   },
   "attributes": {},
   "image": {
-    "url": "/remote/path/to/the/image.png"
+    "url": "https://sportplaces.api.decathlon.com/remote/path/to/the/image.png"
   }
 }
 ```

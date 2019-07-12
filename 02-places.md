@@ -137,6 +137,7 @@ created_at            | `desc`                    | Order of results by creation
 days                  | `7`                       | Number of days from now from which places have been created
 page                  | `2`                       | Number of pagination of results
 partner               | `amilia`                  | Restrict results to only the specified partner (slug)
+featured              | `true`                    | Restrict results to only handpicked featured places (boolean)
 
 
 ## Retrieving Place Information
@@ -161,6 +162,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID"
             "staff": true
         },
         "partner": null,
+        "featured": false,
         "created_at": "2018-04-16 03:19:21 UTC",
         "google_place_id": "ChIJJSVAUdAbyUwRKvTXuACHnqg",
         "contact_details": {
@@ -373,6 +375,7 @@ curl
   "city": "Montreal",
   "province": "QC",
   "country": "CA",
+  "featured": true,
   "notes": "Lorem Ipsum dolor amet sit..."
 }
 ```
@@ -399,7 +402,7 @@ city              | `'Montreal'`                     | City where place is locat
 province          | `'QC'`                           | Province where place is located
 country           | `'CA'`                           | Country code where place is located
 notes             | `'Lorem Ipsum ...'`              | Localized arbitrary notes provided by the user.
-
+featured          | `false|true`                     | Whether place is featured by a partner (only available for Decathlon Partners)
 
 
 > JSON response
@@ -411,6 +414,7 @@ notes             | `'Lorem Ipsum ...'`              | Localized arbitrary notes
         "uuid": "750cbd99-a9b1-4d2f-a271-ba8866296cf6",
         "name": "660 Terry Rd",
         "google_place_id": "ChIJm7QDm0Y36IkRbbD20K2fC24",
+        "featured": true,
         "user": [
             {
                 "user_id": "1235781113",
@@ -468,6 +472,44 @@ notes             | `'Lorem Ipsum ...'`              | Localized arbitrary notes
 }
 ```
 
+## Marking a place as featured
+
+```shell
+curl
+  -X PUT
+  -H "Content-Type: application/json"
+  -H "Authorization: Bearer XXXXX"
+  -d "@data.json"
+  https://sportplaces.api.decathlon.com/api/v1/places/:place_id
+```
+
+Decathlon Partners are able to mark select places as featured in our API, to do
+so simply authenticate as a partner and make a PUT request to a place much like
+updating a place (See above), in fact the process is identical.
+
+> JSON request [@data.json]
+
+```json
+{
+  "featured": true
+}
+```
+
+> JSON response
+
+```json
+{
+    "type": "Feature",
+    "properties": {
+        "uuid": "750cbd99-a9b1-4d2f-a271-ba8866296cf6",
+        "name": "660 Terry Rd",
+        "google_place_id": "ChIJm7QDm0Y36IkRbbD20K2fC24",
+        "featured": true,
+    },
+    ...
+}
+```
+
 ## Updating/Editing Activities of a Place
 ```shell
 curl
@@ -498,6 +540,39 @@ This endpoint updates activities of a particular place
 
 All activity parameters are accepted, with exception of `sport_id` and `user`
 which are immutable.
+
+> Errors
+
+Errors will be responded to with specific error information, and an `HTTP 422` status code.
+
+
+## Removing places
+```shell
+curl
+  -X DELETE
+  -H "Content-Type: application/json"
+  -H 'Authorization: Bearer XXXXXX'
+  https://sportplaces.api.decathlon.com/api/v1/places/:place_id
+```
+This endpoint deletes places that were added by the current authenticated user.
+
+* Users cannot remove places that weren't created by them.
+
+> JSON response
+
+```json
+{
+  message: "Deleted"
+}
+```
+
+### HTTP Request
+
+`GET https://sportplaces.api.decathlon.com/api/v1/places/pending`
+
+### Request Parameters
+
+This GET request accepts no parameters.
 
 > Errors
 
