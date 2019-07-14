@@ -13,12 +13,12 @@ Each filter has to be linked to a sport before being associated with a sport pla
 ### Numerical filters 
 
 * `cellphone_service`
-* `courts`
+* `courts` (number of courts)
 * `court_size`
 * `difficulty`
-* `distance`
-* `duration`
-* `elevation_gain`
+* `distance` (meters)
+* `duration` (meters)
+* `elevation_gain` (meters)
 * `equipment`
 * `field_size`
 * `modality`
