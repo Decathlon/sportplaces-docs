@@ -8,7 +8,7 @@ The Sport Places API can help you build sport-related applications requiring spo
 
 To keep our API Users happy, we will want to make sure we can inform about amazing upgrades or important changes.
 
-Sign up by filling this form: <a href="http://eepurl.com/ggGaRP" target="_blank">http://eepurl.com/ggGaRP</a>
+Sign up by filling this form: <a href="https://mailchi.mp/decathlon/sportplacesapi" target="_blank">https://mailchi.mp/decathlon/sportplacesapi</a>
 
 **2. Learn how authenticate.**
 
