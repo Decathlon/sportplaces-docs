@@ -1,25 +1,15 @@
 # Authentication
 
-## 1. Create an API client application
+## 1. Get your API client application
 
-```shell
-curl --request POST \
-  --url 'https://sportplaces.api.decathlon.com/api/v1/clients' \
-  --header 'content-type: application/json' \
-  --data '{"client_name":"My Client Application","redirect_uris": ["https://client.example.com/callback"]}'
-```
+Instructions to get your API credentials will be sent to you by email after you sign up <a href="https://mailchi.mp/decathlon/sportplacesapi" target="_blank">here</a>. If you lost them, sign up under a different email or contact us.
+
+## 2. Obtain a JWT Token
 
 A JWT token is required for all `POST`, `PUT/PATCH`, and `DELETE` requests. 
 Currently we use Auth0 to issue JWTs for third-party developers, and <a href="https://developers.decathlon.com/products" target="_blank">Decathlon Login</a> if you are part of Decathlon partner program.
 
 All third-party developers must obtain an application `client_id` and `client_secret` issued by Auth0 via our dedicated API endpoint. 
-You **MUST** set your name correctly, as there is currently no way to alter it after creation.
-
-<aside class="warning">
-	We are working on building a console to help you track your credentials. In the meantime, do not lose your client credentials once they are issued.
-</aside>
-
-## 2. Obtain a JWT Token
 
 ```
 https://decathlon.auth0.com/authorize?
