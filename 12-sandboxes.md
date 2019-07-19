@@ -23,3 +23,12 @@ continue to work as features are still being tested/developed.
   In case you have specific needs for a new environment, get in touch with us at
   <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a>
 </aside>
+
+# Postman Collection
+
+We've also crafted a set of pre-configured API calls into a Postman collection
+for you to play with and get familiar with all the endpoints we offer.
+
+The request examples include all possible filter keys and values.
+
+Link: [Postman Collection](https://www.getpostman.com/collections/dc8f48f20e9d699821a2)
