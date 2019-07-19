@@ -16,7 +16,7 @@ All third-party developers must obtain an application `client_id` and `client_se
 You **MUST** set your name correctly, as there is currently no way to alter it after creation.
 
 <aside class="warning">
-	The <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication#Basic_authentication_scheme">Basic Authentication scheme</a> requires credentials to be encoded with base64 before they are sent along with the request.
+	The <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication#Basic_authentication_scheme" target="_blank">Basic Authentication scheme</a> requires credentials to be encoded with base64 before they are sent along with the request.
 </aside>
 
 <aside class="warning">
