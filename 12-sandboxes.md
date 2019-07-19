@@ -31,4 +31,4 @@ for you to play with and get familiar with all the endpoints we offer.
 
 The request examples include all possible filter keys and values.
 
-Link: [Postman Collection](https://www.getpostman.com/collections/dc8f48f20e9d699821a2)
+Link: <a href="https://www.getpostman.com/collections/dc8f48f20e9d699821a2" target="_blank">Postman Collection</a>
