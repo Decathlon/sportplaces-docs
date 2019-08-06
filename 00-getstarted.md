@@ -19,12 +19,12 @@ To get a `client_id` and a `JWT token`, go to [Authentication](#authentication)
 
 You are ready to go! We suggest that you start off by [retrieving all sport places](#sport-places) around you. 
 
-<aside class="notice">
-If your application requires greater access to our API, you should apply to our partners program, 
-to do so please email <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a> to learn more. 
-</aside>
+  <aside class="notice">
+  If your application requires greater access to our API, you should apply to our partners program, 
+  to do so please email <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a> to learn more. 
+  </aside>
 
-4. Play with our Postman Collection
+**Bonus: Play with our Postman Collection**
 
 We've crafted a collection of pre-configured API calls to make it easier for our
 users to familiarize themselves with the format of our requests.
