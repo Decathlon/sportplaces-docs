@@ -2,23 +2,35 @@
 
 # Get started
 
-The Sport Places API can help you build sport-related applications requiring sport places. Here are a few steps to get you started:
+The goal of the Sport Places API is to help you build sport-oriented applications faster as well as easier. 
+Here are a few steps to get you started:
 
-**1. Sign up as an API User to receive important communications (mandatory).**
+**1. Sign up to receive our newsletter update (_required_)**
 
-To keep our API Users happy, we will want to make sure we can inform about amazing upgrades or important changes.
+To keep our users happy, we want to inform everyone about the amazing upgrades and critical changes.
 
-Sign up by filling this form: <a href="https://mailchi.mp/decathlon/sportplacesapi" target="_blank">https://mailchi.mp/decathlon/sportplacesapi</a>
+Sign up now by filling in this form: <a href="https://mailchi.mp/decathlon/sportplacesapi" target="_blank">https://mailchi.mp/decathlon/sportplacesapi</a>
 
-**2. Learn how authenticate.**
+**2. Learn how to authenticate**
 
-To get a `client_id` and `JWT Tokens`, go to [Authentication](#authentication)
+To get a `client_id` and a `JWT token`, go to [Authentication](#authentication)
 
-**3. Make your first API Call!**
+**3. Make your first API Call**
 
-You are ready to go! We suggest you make your first API Call calling the sport places around you. Let's start with [Sport Places](#sport-places).  
+You are ready to go! We suggest that you start off by [retrieving all sport places](#sport-places) around you. 
 
 <aside class="notice">
-If you want to have greater access to our API you must be part of our partners program, 
-please email <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a> to learn more. 
+If your application requires greater access to our API, you should apply to our partners program, 
+to do so please email <a href="mailto:sportplacesapi@decathlon.com">sportplacesapi@decathlon.com</a> to learn more. 
 </aside>
+
+4. Play with our Postman Collection
+
+We've crafted a collection of pre-configured API calls to make it easier for our
+users to familiarize themselves with the format of our requests.
+This, however, is only intended to be a testing tool, not an official or
+unofficial interface to our API.
+
+Please <a href="https://app.getpostman.com/run-collection/dc8f48f20e9d699821a2" target="_blank">click here to download</a> our Postman Collection
+
+* In order to use this collection, you must have <a href="https://getpostman.com" target="_blank">Postman</a> installed on your system.
