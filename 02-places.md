@@ -25,6 +25,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&
             "properties": {
                 "uuid": "8b1e3027-e438-42c2-92ab-5ebd23f68d54",
                 "name": "McConnell Arena",
+                "slug": "mcconnell-arena",
                 "google_place_id": "ChIJ5XD-5zAayUwRIK7t7t89ZJ0",
                 "contact_details": {
                     "email": null,
@@ -144,6 +145,8 @@ featured              | `true`                    | Restrict results to only han
 
 ```shell
 curl "https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID"
+# OR
+curl "https://sportplaces.api.decathlon.com/api/v1/places/PLACE_SLUG"
 ```
 
 > JSON response:
@@ -154,6 +157,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID"
     "properties": {
         "uuid": "488c45cf-2d7c-4903-9477-01249966adcf",
         "name": "Studio Bizz Mount Royal",
+        "slug": "studio-bizz-mount-royal",
         "proximity": null,
         "user": {
             "identifier": "0",
@@ -229,9 +233,11 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID"
 This endpoint retrieves data about a single place rather than a collection of
 places in a specific geolocation.
 
+Places can be retrieved by their `UUID` or `slug` properties.
+
 ### HTTP Request
 
-`GET https://sportplaces.api.decathlon.com/api/v1/places/PLACE_UUID`
+`GET https://sportplaces.api.decathlon.com/api/v1/places/PLACE_SLUG`
 
 ### Query Parameters
 
