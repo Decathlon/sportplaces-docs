@@ -37,4 +37,13 @@ Locales follow the <a href='https://en.wikipedia.org/wiki/List_of_ISO_639-1_code
 
 If your locale isn't listed, please <a href='mailto:sportplacesapi@decathlon.com'> get in touch</a>
 
-At this moment the only supported column is `notes` for a place. We plan on localizing more data to cater to our users needs.
+The following columns are available for translation: 
+```
+name
+address
+city
+province
+notes
+```
+
+We plan on localizing more data to cater to our users needs.
