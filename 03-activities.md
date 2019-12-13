@@ -13,6 +13,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places/8b1e3027-e438-42c2-92a
     {
         "sport_id": 160,
         "tags": [],
+        "title": "Lorem Ipsum Dolor Amet Sit",
         "difficulty": 2,
         "duration": 10,
         "distance": 10,
@@ -22,6 +23,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places/8b1e3027-e438-42c2-92a
     {
         "sport_id": 160,
         "tags": [],
+        "title": "Lorem Ipsum Dolor Amet Sit",
         "difficulty": 2,
         "distance": 10
     }
@@ -44,6 +46,7 @@ curl -X POST \
   {
     "sport_id": 150,
     "tags": ["free"],
+    "title": "Lorem Ipsum Dolor Amet Sit",
     "cellphone_service": 1
   }
 }'
@@ -56,6 +59,7 @@ curl -X POST \
     ...
     "sport_id": 150,
     "tags": ["free"],
+    "title": "Lorem Ipsum Dolor Amet Sit",
     "cellphone_service": 1
     ...
 }
@@ -78,6 +82,7 @@ curl -X POST \
   {
     "sport_id": 150,
     "tags": ["free"],
+    "title": "My Activity Title",
     "cellphone_service": 1
   }
 }'
@@ -90,6 +95,7 @@ curl -X POST \
     ...
     "sport_id": 150,
     "tags": ["free"],
+    "title": "My Activity Title",
     "cellphone_service": 1
     ...
 }
@@ -114,11 +120,13 @@ curl -X POST \
       {
         "sport_id": 150,
         "tags": ["free"],
+        "title": "My Activity Title 1",
         "cellphone_service": 1
       },
       {
         "sport_id": 175,
         "tags": ["lessons", "free"],
+        "title": "My Activity Title 2",
         "surface": "ice"
       }
     ]
@@ -133,6 +141,7 @@ curl -X POST \
         ...
         "sport_id": 150,
         "tags": ["free"],
+        "title": "My Activity Title 1",
         "cellphone_service": 1
         ...
     },
@@ -140,6 +149,7 @@ curl -X POST \
         ...
         "sport_id": 175,
         "tags": ["lessons", "free"],
+        "title": "My Activity Title 2",
         "surface": "ice"
         ...
     },
@@ -191,6 +201,7 @@ curl -X POST \
 {
   "sport_id": 175,
   "tags": ["equipment_rental"],
+  "title": "My Activity Title",
   "photo_reference": "CmRaAAAAN3qk1mKFY6G...",
   "user": {
     "id": 1,

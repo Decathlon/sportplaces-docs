@@ -44,6 +44,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&
                   {
                     "sport_id": 160,
                     "tags": [],
+                    "title": "My Activity Title 1",
                     "attributes": {
                       "difficulty": 2,
                       "distance": 10
@@ -189,6 +190,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places/PLACE_SLUG"
                     "lessons"
                 ],
                 "photo_reference": "CmRaAAAA7zB04n0YClB-QsAYy5ajwJvw4FbGoPovFwsU0rnvzyXAPbhIrFIgBbD3YP4ktUiLAt08G_Ij0reuSkICg62ycKregB-bG93z9VBZlsKaQQ6_W3oxwSLi4z7m-3GP1NiIEhDIR732x9Vy3hlwiC2Wg4OhGhRGJ9RYl8yhYunKA5HBktDqWj1XRw",
+                "title": "My Activity Title 1",
                 "user": {
                     "identifier": "0",
                     "first_name": "Decathlon",
@@ -202,6 +204,7 @@ curl "https://sportplaces.api.decathlon.com/api/v1/places/PLACE_SLUG"
             },
             {
                 "sport_id": 292,
+                "title": "My Activity Title 2",
                 "tags": [
                     "lessons"
                 ],
@@ -264,12 +267,14 @@ curl
     {
       "sport_id": "175",
       "tags": ["free"],
+      "title": "My Activity Title 3",
       "distance": 10,
       "difficulty": 2
     },
     {
       "sport_id": "160",
       "tags": ["free"],
+      "title": "My Activity Title 4",
       "distance": 10,
       "difficulty": 2,
       "duration": 10,
@@ -291,6 +296,7 @@ curl
     {
       "sport_id": "175",
       "tags": ["free"]
+      "title": "My Activity Title",
     }
   ],
 	"notes": "Lorem Ipsum dolor amet sit",
@@ -445,6 +451,7 @@ featured          | `false|true`                     | Whether place is featured
         "activities": [
             {
                 "sport_id": 175,
+                "title": "My Activity Title",
                 "tags": [
                     "free"
                 ],
@@ -455,6 +462,7 @@ featured          | `false|true`                     | Whether place is featured
             },
             {
                 "sport_id": 160,
+                "title": "My Activity Title",
                 "tags": [
                     "free"
                 ],
@@ -531,6 +539,7 @@ curl
 ```json
 {
   "tags": ["free"],
+  "title": "My Activity Title",
   "photo_reference": "1235ygfrt6547u4trgew23rfv[ew455",
   "difficulty": 2,
   "distance": 1
@@ -628,6 +637,7 @@ This endpoint lists places that were added by the user ID'ed by the JWT token an
         "activities": [
             {
                 "sport_id": 175,
+                "title": "My Activity Title",
                 "tags": [
                     "free"
                 ],
