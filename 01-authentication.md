@@ -7,6 +7,13 @@ We use Auth0 to issue JWTs for third-party developers, and <a href="https://deve
 
 Third-party developers must get an application `client_id` and `client_secret` via our dedicated API endpoint. 
 
+<aside class="warning">
+  Note for <strong>Decathlon Partners</strong>: If you're a Decathlon Partner planning on using our API, make sure to
+  request access to the following scopes when signing up for Decathlon Login:
+  `openid, contacts, email, profile`. Our application requires these scopes in
+  order to properly identify the user.
+</aside>
+
 ## METHOD #1 - Creating an API client application
 
 ```shell
