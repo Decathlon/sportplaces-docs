@@ -1,6 +1,13 @@
 # Authentication
 
-## 1. Create an API client application
+Currently `POST`, `PUT/PATCH`, and `DELETE` requests require authentication.
+`GET` requests are exempt.
+
+We use Auth0 to issue JWTs for third-party developers, and <a href="https://developers.decathlon.com/products" target="_blank">Decathlon Login</a> if you are part of the Decathlon partner program.
+
+Third-party developers must get an application `client_id` and `client_secret` via our dedicated API endpoint. 
+
+## METHOD #1 - Creating an API client application
 
 ```shell
 curl --request POST \
@@ -9,21 +16,24 @@ curl --request POST \
   --data '{"client_name":"My Client Application","redirect_uris": ["https://client.example.com/callback"]}'
 ```
 
-A JWT token is required for all `POST`, `PUT/PATCH`, and `DELETE` requests. 
-Currently we use Auth0 to issue JWTs for third-party developers, and <a href="https://developers.decathlon.com/products" target="_blank">Decathlon Login</a> if you are part of Decathlon partner program.
+Make sure you have you client_name and redirect_uris set correctly.
 
-All third-party developers must obtain an application `client_id` and `client_secret` issued by Auth0 via our dedicated API endpoint. 
-You **MUST** set your name correctly, as there is currently no way to alter it after creation.
+### Using a client_id / client_secret
+
+```shell
+curl "https://sportplaces.api.decathlon.com/api/v1/places"
+  -H "Authorization: Basic XXXXXX"
+```
 
 <aside class="warning">
 	The <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication#Basic_authentication_scheme" target="_blank">Basic Authentication scheme</a> requires credentials to be encoded with base64 before they are sent along with the request.
 </aside>
 
 <aside class="warning">
-	We are working on building a console to help you track your credentials. In the meantime, do not lose your client credentials once they are issued.
+  We are working on building a console to help you track your credentials. In the meantime, do not lose your client credentials once they are issued.
 </aside>
 
-## 2. Obtain a JWT Token
+## METHOD #2 - Obtain a JWT Token via Auth0
 
 ```
 https://decathlon.auth0.com/authorize?
@@ -54,13 +64,9 @@ fragment of the URI.
 For security reasons, please note the JWT Token is only valid for 15 minutes. You will need to refresh it regularly. 
 </aside>
 
-## 3. Using a JWT
+### Using a JWT
 
 ```shell
 curl "https://sportplaces.api.decathlon.com/api/v1/places"
   -H "Authorization: Bearer XXXXXX"
 ```
-
-**`GET` requests do not require authentication**
-
-You must authenticate all `POST`, `PUT/PATCH`, and `DELETE` requests with a JWT in the Authorization header.

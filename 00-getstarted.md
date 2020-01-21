@@ -13,7 +13,12 @@ Sign up now by filling in this form: <a href="https://mailchi.mp/decathlon/sport
 
 **2. Learn how to authenticate**
 
-To get a `client_id` and a `JWT token`, go to [Authentication](#authentication)
+We currently support 3 methods of authentication.
+  1. Client ID + Secret pair.
+  2. JWT Token issued by Auth0 (Instructions below)
+  3. JWT Token issued by Decathlon Connect (Decathlon Partners)
+
+To learn more, head over to [Authentication](#authentication)
 
 **3. Make your first API Call**
 
